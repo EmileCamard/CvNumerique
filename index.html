@@ -1,0 +1,331 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>CV Numérique - Emile Camard</title>
+    <link rel="stylesheet" href="styles.css" />
+    
+</head>
+<script>
+function toggleProject(project) {
+    let details = project.querySelector(".project-details");
+    if (details.style.maxHeight) {
+        details.style.maxHeight = null;   // ferme
+    } else {
+        details.style.maxHeight = details.scrollHeight + "px"; // ouvre
+    }
+}
+</script>
+
+<body>
+
+
+<nav>
+    <ul>
+        <li><a href="#Accueil">Accueil</a></li>
+        <li><a href="#Parcours">Parcours</a></li>
+        <li><a href="#Experience">Expérience</a></li>
+        <li><a href="#Projet">Projets</a></li>
+        <li><a href="#Competences">Compétences</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+
+    <main>
+<!-- ===================== SECTION ACCUEIL ===================== -->
+<section id="Accueil" class="hero">
+    <div class="hero-content">
+
+        <!-- Texte -->
+        <div class="hero-text">
+            <h1>Emile CAMARD</h1>
+                <br>
+            <h2>Étudiant en BUT Informatique</h2>
+    <br>
+            <p class="hero-subtitle">
+                À la recherche d’un stage d’avril à juin 2026 (8–12 semaines)<br>
+                Développement • Systèmes • Gestion de projet
+            </p>
+    <br>
+            <p class="hero-description">
+                Étudiant en 2ᵉ année de BUT Informatique à l’Université de Lille, passionné par 
+                le développement logiciel, Linux, l’algorithmique et la gestion de projet.  
+                Curieux, motivé et impliqué, je participe à de nombreux projets Java, SQL, web,
+                et administration système.  
+                Fan de basketball et de jeux de stratégie, j’aime travailler en équipe 
+                et résoudre des problèmes complexes.
+            </p>
+    <br>
+            <div class="hero-buttons">
+                <a href="#Projet" class="btn-primary">Voir mes projets</a>
+                <a href="#contact" class="btn-secondary">Me contacter</a>
+            </div>
+        </div>
+
+        <!-- Photo -->
+        <div class="hero-photo">
+            <img src="IMG/CAMARD portraits iut info-356(1).jpg" alt="Photo Emile Camard">
+        </div>
+
+    </div>
+</section>
+
+        <br><br>
+<section id="Parcours">
+    <br>
+    <h2>Parcours</h2>
+
+    <h3>BUT Informatique — Université de Lille (2023–2026)</h3>
+    <p>
+        Formation centrée sur le développement logiciel, l’algorithmique, la programmation orientée objet, 
+        l’administration systèmes et réseaux, la gestion de bases de données et la conduite de projet.
+    </p>
+    <p>
+        Réalisation de nombreux projets pratiques détaillés dans les sections ci-dessous 
+        (développement web, applications Java, bases de données, modélisation, robotique, et plus).
+    </p>
+
+    <h3>Lycée La Salle Lille</h3>
+    <p>
+        Baccalauréat Général — Mention Bien  
+        <br>Spécialités : Mathématiques & Numérique et Sciences Informatiques (NSI)
+    </p>
+</section>
+
+<br><br>
+
+<section id="Experience">
+    <br>
+    <h2>Expérience</h2>
+
+    <h3>Projets académiques significatifs</h3>
+    <p>
+        Participation à divers projets de développement logiciel et web, conception de bases de données, 
+        modélisation UML, création d’applications Java, réalisation d’un site web complet, 
+        et production d’une vidéo de vulgarisation scientifique.  
+        Ces projets m’ont permis de développer mes compétences techniques, ma capacité d’organisation
+        et mon autonomie.
+    </p>
+
+    <h3>Stage de seconde — 3Axes Institut (2022)</h3>
+    <p>
+        Découverte des métiers de l’informatique et du jeu vidéo.  
+        Initiation aux outils de création numérique (Photoshop, Blender) et observation des workflows
+        de production graphique et 3D.
+    </p>
+
+    <h3>Stage de 3ème — Institut d’Éducation Motrice Jules Ferry (2021)</h3>
+    <p>
+        Participation à l’accompagnement d’enfants en situation de handicap moteur avec troubles 
+        neuro-développementaux. Observation de séances de rééducation 
+        (orthophonie, ergothérapie, kinésithérapie, équithérapie).  
+        Découverte d’un environnement pluridisciplinaire centré sur l’accompagnement humain.
+    </p>
+</section>
+
+        <br><br>
+        <section id="Competences">
+                        <br>
+            <h2>Compétences</h2>
+                        <br>
+            <h3>Développement</h3>
+            <ul>
+                <li>Java (POO, JavaFX, fichiers CSV)</li>
+                <li>HTML / CSS</li>
+                <li>SQL (requêtes et modélisation)</li>
+                <li>Bases de l’algorithmique (optimisation, graphes…)</li>
+            </ul>
+
+            <h3>Systèmes & Outils</h3>
+            <ul>
+                <li>Linux / Debian — Administration système, VM</li>
+                <li>VirtualBox</li>
+
+            </ul>
+
+            <h3>Gestion de projet & Communication</h3>
+            <ul>
+                <li>Git / GitHub / GitLab</li>
+                <li>Travail en équipe</li>
+                <li>Rédaction technique</li>
+                <li>Organisation et suivi de projet</li>
+            </ul>
+        </section>
+        <br><br>
+       <section id="Projet">
+    <br>
+    <h2>Mes projets</h2>
+    <br>
+
+    <!-- ---------------------- SEMESTRE 1 ---------------------- -->
+    <h3 class="semester-title">Semestre 1</h3>
+
+    <!-- SAE 1.02 -->
+    <div class="project-item" onclick="toggleProject(this)">
+        <div class="project-summary">
+            <h3>SAÉ 1.02 — Questions pour un Chevalier</h3>
+            <p>Jeu ludo-pédagogique médiéval en Java.</p>
+        </div>
+
+        <div class="project-details">
+            <img src="IMG/QuestionChevalier.png" alt="">
+            <p>
+                Jeu narratif médiéval avec trois modes : histoire, infini et deux joueurs.
+                Développement complet en Java avec modularité, gestion de fichiers, sauvegardes,
+                contrôles de saisie et tests. Projet réalisé en binôme.
+            </p>
+        </div>
+    </div>
+
+    <!-- SAE 1.05 / 1.06 -->
+    <div class="project-item" onclick="toggleProject(this)">
+        <div class="project-summary">
+            <h3>SAÉ 1.05 / 1.06 — Site Web + Newsletter</h3>
+            <p>Création d’un site web complet et d'une newsletter.</p>
+        </div>
+
+        <div class="project-details">
+            <img src="IMG/SiteNintendo.png" alt="">
+            <p>
+                Conception d’un site web (HTML/CSS) avec maquette, design professionnel, responsive,
+                et intégration d’une newsletter. Gestion du planning, répartition des tâches
+                et production d'un site cohérent et valide W3C.
+            </p>
+        </div>
+    </div>
+
+    <!-- SAE 1.03 -->
+    <div class="project-item" onclick="toggleProject(this)">
+        <div class="project-summary">
+            <h3>SAÉ 1.03 — Installation de poste de développement</h3>
+            <p>Installation d’une VM Debian et configuration système.</p>
+        </div>
+
+        <div class="project-details">
+            <img src="IMG/VMdebian.png" alt="">
+            <p>
+                Installation d'une machine virtuelle Debian, ajout d’utilisateurs,
+                configuration des droits, installation de logiciels, gestion du shell et
+                automatisation basique. Introduction à la virtualisation et à l’administration système.
+            </p>
+        </div>
+    </div>
+
+    <!-- ---------------------- SEMESTRE 2 ---------------------- -->
+    <h3 class="semester-title">Semestre 2</h3>
+
+    <!-- SAE 2.01 / 2.02 -->
+    <div class="project-item" onclick="toggleProject(this)">
+        <div class="project-summary">
+            <h3>SAÉ 2.01 / 2.02 — Séjours linguistiques</h3>
+            <p>Projet de groupe mêlant communication, organisation et analyse.</p>
+        </div>
+
+        <div class="project-details">
+            <p>
+                Organisation complète d’un projet de séjours linguistiques : analyse du marché,
+                budget, communication, et présentation orale professionnelle. Travail en équipe
+                sur un projet réel et structuré.
+            </p>
+        </div>
+    </div>
+
+    <!-- SAE 2.03 -->
+    <div class="project-item" onclick="toggleProject(this)">
+        <div class="project-summary">
+            <h3>SAÉ 2.03 — VM Debian automatisée</h3>
+            <p>Script d’installation automatisée d'une distribution Linux.</p>
+        </div>
+
+        <div class="project-details">
+            <img src="IMG/Gitea.png" alt="">
+            <p>
+                Automatisation de l’installation d’une Debian grâce à des scripts shell.
+                Installation de logiciels, configuration réseau, ajout d'utilisateurs,
+                et production d’un rapport détaillé en Markdown.  
+            </p>
+        </div>
+    </div>
+
+    <!-- SAE 2.04 -->
+    <div class="project-item" onclick="toggleProject(this)">
+        <div class="project-summary">
+            <h3>SAÉ 2.04 — Jeux Olympiques</h3>
+            <p>Analyse de données des JO et création de graphiques.</p>
+        </div>
+
+        <div class="project-details">
+            <img src="IMG/rotaticvgitea.png" alt="">
+            <p>
+                Analyse de bases de données concernant les Jeux Olympiques,
+                traitement statistique, visualisation et création de tableaux comparatifs.
+            </p>
+        </div>
+    </div>
+
+    <!-- SAE 2.05 -->
+    <div class="project-item" onclick="toggleProject(this)">
+        <div class="project-summary">
+            <h3>SAÉ 2.05 — JobyFind</h3>
+            <p>Application web RH de mise en relation entreprise/étudiant.</p>
+        </div>
+
+        <div class="project-details">
+            <img src="IMG/jobyfind.png" alt="">
+            <p>
+                Développement d’une application web : gestion d’offres, comptes utilisateurs,
+                filtres, tableau de bord, interface moderne et responsive. Travail en équipe
+                complète (scrum, tickets, livrables).
+            </p>
+        </div>
+    </div>
+
+    <!-- SAE 2.06 -->
+    <div class="project-item" onclick="toggleProject(this)">
+        <div class="project-summary">
+            <h3>SAÉ 2.06 — Vidéo de vulgarisation scientifique</h3>
+            <p>Production d’une vidéo pédagogique complète.</p>
+        </div>
+
+        <div class="project-details">
+            <p>
+                Écriture du script, tournage, montage, gestion audio et ajout de visuels.
+                Projet de vulgarisation visant à expliquer un concept scientifique de manière
+                simple et accessible.
+            </p>
+        </div>
+    </div>
+
+</section>
+
+        <br><br>
+        <section id="contact">
+                        <br>
+            <h2>Contact</h2>
+                        <br>
+            <div class="contact-info">
+                <h3>Email : emile.camard@gmail.com</h3>
+            </div>
+                        <div class="contact-form">
+                <h3>Envoyer un message :</h3>
+                <form action="mailto:emile.camard@gmail.com" method="post" enctype="text/plain">
+                    <label for="name">Nom :</label><br>
+                    <input type="text" id="name" name="name" required><br>
+                    <label for="email">Email :</label><br>
+                    <input type="email" id="email" name="email" required><br>
+                    <label for="message">Message :</label><br>
+                    <textarea id="message" name="message" rows="5" required></textarea><br>
+                    <button type="submit">Envoyer</button>
+                </form>
+            </div>
+        <br><br>
+            <div class="download">
+                <h2>Télécharger mon CV :</h2>
+                <a href="CV-Emile_Camard.pdf" download> Télécharger le CV </a>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
