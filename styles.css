@@ -141,74 +141,114 @@ ul { margin-left: 1.5rem; }
 /* --------------------------------------------------
    HERO BANNER
 -------------------------------------------------- */
-/* HERO / Accueil avec fond bleu pro */
+/*/* HERO / Section d'accueil professionnelle */
 .hero {
-    background: #0a3d62;          /* Bleu pro */
-    min-height: 100vh;            /* Hauteur = 100% de l'écran */
-    width: 100%;                  /* Largeur = 100% de l'écran */
-    padding: 0;                   /* Pas de padding latéral */
-    
+    background: linear-gradient(135deg, #0b477a, #0e5a97);
+    min-height: 100vh;
+    width: 100%;
     display: flex;
-    align-items: center;          /* Centrage vertical */
-    justify-content: center;      /* Centrage horizontal */
-    
-    position: relative;
-    color: white;
-    
+    align-items: center;
+    justify-content: center;
+    color: #f6faff; /* Texte très clair */
 }
 
-/* Contenu interne */
+/* Conteneur */
 .hero-content {
-    max-width: 1100px;           /* Pour que le texte/photo reste lisible */
-    margin: 0 1rem;              /* Petit padding intérieur pour mobile */
+    max-width: 1200px;
+    margin: 0 2rem;
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    gap: 2rem;
+    flex-wrap: wrap;
+    gap: 3rem;
 }
 
-/* Retirer le filtre sombre */
-.hero::before {
-    background: none;
-    backdrop-filter: none;
-}
-
+/* --- TEXTE --- */
 .hero-text {
-    flex: 1 1 450px;
+    flex: 1 1 500px;
     text-align: left;
 }
 
-.hero-text h1 {
-    font-size: 2.8rem;
-    font-weight: 700;
+/* GRAND TITRE */
+.hero-name {
+    font-size: 3.8rem;  /* Taille augmentée */
+    font-weight: 800;
+    letter-spacing: -1px;
+    color: #ffffff; /* Blanc pur */
 }
 
-.hero-text h2 {
-    font-size: 1.8rem;
-    font-weight: 400;
-    margin-top: .5rem;
+/* Sous-titre */
+.hero-title {
+    font-size: 1.6rem;  /* Plus grand */
+    margin-top: 0.5rem;
+    color: #e9f4ff; /* Blanc légèrement bleuté pour lisibilité */
 }
 
-.hero-subtitle,
-.hero-description {
-    margin-top: 1rem;
+/* Disponibilité */
+.hero-subtitle {
+    margin-top: 1.8rem;
+    font-size: 1.35rem;  /* Lisibilité ++ */
     line-height: 1.6;
-    max-width: 600px;
-        color: #f2f2f2;
+    color: #f0f7ff;
 }
 
+/* Description */
 .hero-description {
-    font-size: 1.05rem;
-    color: #f2f2f2;
+    margin-top: 1.3rem;
+    font-size: 1.25rem;  /* Plus grand */
+    max-width: 620px;
+    color: #f3f8ff;
+    opacity: 0.95;
 }
 
-/* Hero Photo */
+/* --- PHOTO --- */
 .hero-photo img {
-    width: 280px;
+    width: 330px; /* Un peu plus grande */
     border-radius: 18px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.35);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.45);
+    border: 3px solid rgba(255,255,255,0.35);
 }
+
+/* --- BOUTONS --- */
+.hero-buttons {
+    display: flex;
+    gap: 1.2rem;
+    margin-top: 2rem;
+}
+
+.btn-primary,
+.btn-secondary {
+    padding: 1rem 1.8rem;  /* Boutons plus grands */
+    font-weight: 600;
+    border-radius: 12px;
+    text-decoration: none;
+    font-size: 1.1rem; /* Texte plus lisible */
+    transition: 0.25s ease;
+}
+
+/* Bouton blanc */
+.btn-primary {
+    background: white;
+    color: #0b477a;
+}
+
+.btn-primary:hover {
+    opacity: 0.9;
+    transform: translateY(-3px);
+}
+
+/* Bouton transparent */
+.btn-secondary {
+    border: 2px solid white;
+    color: white;
+}
+
+.btn-secondary:hover {
+    background: rgba(255,255,255,0.18);
+    transform: translateY(-3px);
+}
+
+
 
 /* Buttons */
 .hero-buttons {
@@ -364,5 +404,6 @@ footer {
     background: rgba(30,30,47,0.85);
     backdrop-filter: blur(8px);
 }
+
 
 
