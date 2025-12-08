@@ -26,15 +26,13 @@ function toggleProject(project) {
         <li><a href="#Accueil">Accueil</a></li>
         <li><a href="#Parcours">Parcours</a></li>
         <li><a href="#Experience">Expérience</a></li>
+                <li><a href="#Competences">Compétences</a></li>
         <li><a href="#Projet">Projets</a></li>
-        <li><a href="#Competences">Compétences</a></li>
         <li><a href="#contact">Contact</a></li>
     </ul>
 </nav>
-
-
-    <main>
-<!-- ===================== SECTION ACCUEIL ===================== -->
+<header>
+    <!-- ===================== SECTION ACCUEIL ===================== -->
 <section id="Accueil" class="hero">
     <div class="hero-content">
 
@@ -71,6 +69,9 @@ function toggleProject(project) {
 
     </div>
 </section>
+</header>
+
+    <main>
 
         <br><br>
 <section id="Parcours">
@@ -99,16 +100,7 @@ function toggleProject(project) {
 <section id="Experience">
     <br>
     <h2>Expérience</h2>
-
-    <h3>Projets académiques significatifs</h3>
-    <p>
-        Participation à divers projets de développement logiciel et web, conception de bases de données, 
-        modélisation UML, création d’applications Java, réalisation d’un site web complet, 
-        et production d’une vidéo de vulgarisation scientifique.  
-        Ces projets m’ont permis de développer mes compétences techniques, ma capacité d’organisation
-        et mon autonomie.
-    </p>
-
+    
     <h3>Stage de seconde — 3Axes Institut (2022)</h3>
     <p>
         Découverte des métiers de l’informatique et du jeu vidéo.  
@@ -142,6 +134,7 @@ function toggleProject(project) {
             <ul>
                 <li>Linux / Debian — Administration système, VM</li>
                 <li>VirtualBox</li>
+                <li>Terminal & Shell scripting</li>
 
             </ul>
 
@@ -151,6 +144,7 @@ function toggleProject(project) {
                 <li>Travail en équipe</li>
                 <li>Rédaction technique</li>
                 <li>Organisation et suivi de projet</li>
+                <li>Utilisation méthode agile (scrum)</li>
             </ul>
         </section>
         <br><br>
@@ -158,144 +152,575 @@ function toggleProject(project) {
     <br>
     <h2>Mes projets</h2>
     <br>
-
-    <!-- ---------------------- SEMESTRE 1 ---------------------- -->
-    <h3 class="semester-title">Semestre 1</h3>
-
-    <!-- SAE 1.02 -->
-    <div class="project-item" onclick="toggleProject(this)">
-        <div class="project-summary">
-            <h3>SAÉ 1.02 — Questions pour un Chevalier</h3>
-            <p>Jeu ludo-pédagogique médiéval en Java.</p>
-        </div>
-
-        <div class="project-details">
-            <img src="IMG/QuestionChevalier.png" alt="">
-            <p>
-                Jeu narratif médiéval avec trois modes : histoire, infini et deux joueurs.
-                Développement complet en Java avec modularité, gestion de fichiers, sauvegardes,
-                contrôles de saisie et tests. Projet réalisé en binôme.
-            </p>
-        </div>
+    <!-- ---------------------- SEMESTRE 3 ---------------------- -->
+    <h3 class="semester-title">Semestre 3</h3>
+<div class="project-item" onclick="toggleProject(this)">
+    <div class="project-summary">
+        <h3>SAÉ 3.02 — Labyrinthes</h3>
+        <p>Développement d’un jeu de labyrinthe en Java avec modes libre et progression.</p>
     </div>
 
-    <!-- SAE 1.05 / 1.06 -->
-    <div class="project-item" onclick="toggleProject(this)">
-        <div class="project-summary">
-            <h3>SAÉ 1.05 / 1.06 — Site Web + Newsletter</h3>
-            <p>Création d’un site web complet et d'une newsletter.</p>
-        </div>
+    <div class="project-details">
+                <img src="IMG/Laby.png" alt="Illustration du projet">        
+        <h4>Résumé du projet</h4>
+<p>
+Le projet consistait à développer un <strong>jeu de labyrinthe</strong> en Java, destiné à proposer deux modes de jeu : 
+le <strong>Mode Libre</strong>, où le joueur choisit la taille du labyrinthe et le pourcentage de murs, 
+et le <strong>Mode Progression</strong>, avec des étapes de difficulté croissante et des défis spécifiques. 
+Nous avons implémenté des <strong>labyrinthes aléatoires et parfaits</strong> en utilisant des structures de données optimisées 
+et des algorithmes tels que DFS et BFS pour garantir l’accessibilité et la distance minimale entre l’entrée et la sortie. 
+L’interface a été réalisée en <strong>JavaFX</strong>, avec gestion des déplacements au clavier, affichage dynamique 
+et intégration d’une <strong>boutique</strong> où le joueur peut acheter des bonus. 
+Pour enrichir l’expérience, nous avons également ajouté un <strong>thème Bob l’Éponge</strong> et des éléments graphiques interactifs. 
+Ce projet nous a permis de combiner des compétences en <strong>algorithmique, structures de données, programmation orientée objet, développement d’interface graphique</strong> 
+et <strong>gestion de projet en équipe</strong>.
+</p>
 
-        <div class="project-details">
-            <img src="IMG/SiteNintendo.png" alt="">
-            <p>
-                Conception d’un site web (HTML/CSS) avec maquette, design professionnel, responsive,
-                et intégration d’une newsletter. Gestion du planning, répartition des tâches
-                et production d'un site cohérent et valide W3C.
-            </p>
-        </div>
+        <h4>Compétences techniques développées</h4>
+        <ul>
+            <li>Programmation en Java orientée objet et JavaFX</li>
+            <li>Conception et implémentation d’algorithmes (génération et parcours de labyrinthe)</li>
+            <li>Structuration de données (grilles, cellules, cartes)</li>
+            <li>Gestion de projet en équipe avec Git et GitLab</li>
+            <li>Tests unitaires et validation fonctionnelle des fonctionnalités</li>
+            <li>Création et lecture de fichiers CSV pour le suivi des joueurs</li>
+        </ul>
+
+        <h4>Savoir-être et compétences transversales</h4>
+        <ul>
+            <li>Travail collaboratif et coordination d’équipe</li>
+            <li>Organisation et planification des tâches</li>
+            <li>Communication efficace entre membres et suivi du projet</li>
+            <li>Résolution de problèmes et adaptation face aux difficultés techniques</li>
+        </ul>
+
+        <h4>Outils et méthodes</h4>
+        <ul>
+            <li>Java, IntelliJ IDEA / Visual Studio Code</li>
+            <li>JavaFX pour l’interface graphique</li>
+            <li>Git / GitLab pour le versioning</li>
+            <li>Google Docs, Figma, Canva pour la collaboration et les maquettes</li>
+        </ul>
     </div>
-
-    <!-- SAE 1.03 -->
-    <div class="project-item" onclick="toggleProject(this)">
-        <div class="project-summary">
-            <h3>SAÉ 1.03 — Installation de poste de développement</h3>
-            <p>Installation d’une VM Debian et configuration système.</p>
-        </div>
-
-        <div class="project-details">
-            <img src="IMG/VMdebian.png" alt="">
-            <p>
-                Installation d'une machine virtuelle Debian, ajout d’utilisateurs,
-                configuration des droits, installation de logiciels, gestion du shell et
-                automatisation basique. Introduction à la virtualisation et à l’administration système.
-            </p>
-        </div>
-    </div>
+</div>
 
     <!-- ---------------------- SEMESTRE 2 ---------------------- -->
     <h3 class="semester-title">Semestre 2</h3>
 
-    <!-- SAE 2.01 / 2.02 -->
-    <div class="project-item" onclick="toggleProject(this)">
-        <div class="project-summary">
-            <h3>SAÉ 2.01 / 2.02 — Séjours linguistiques</h3>
-            <p>Projet de groupe mêlant communication, organisation et analyse.</p>
-        </div>
-
-        <div class="project-details">
-            <p>
-                Organisation complète d’un projet de séjours linguistiques : analyse du marché,
-                budget, communication, et présentation orale professionnelle. Travail en équipe
-                sur un projet réel et structuré.
-            </p>
-        </div>
+<!-- SAE 2.01 / 2.02 -->
+<div class="project-item" onclick="toggleProject(this)">
+    <div class="project-summary">
+        <h3>SAÉ 2.01 / 2.02 — Séjours linguistiques</h3>
+        <p>Outil d’aide à la décision pour l’organisation de séjours linguistiques.</p>
     </div>
+
+    <div class="project-details">
+                <img src="IMG/SejourLing.png" alt="Illustration du projet">
+        <h4>Résumé du projet</h4>
+        <p>
+            Le projet consiste à développer un outil informatique permettant d’optimiser
+            l’organisation de séjours linguistiques entre plusieurs pays européens 
+            (France, Italie, Espagne, Allemagne). L’objectif est de trouver le meilleur 
+            appariement entre adolescents hôtes et visiteurs en tenant compte de 
+            contraintes rédhibitoires (allergies, incompatibilités) et de préférences 
+            personnelles (hobbies, genre, âge). 
+            L’application repose sur des algorithmes d’optimisation modélisés en graphe,
+            une interface graphique en JavaFX, et une architecture orientée objet en Java.
+            Le projet mobilise des notions de modélisation UML, traitement de fichiers CSV, 
+            structures de données et gestion rigoureuse de projet via Git.
+        </p>
+
+        <h4>Compétences développées</h4>
+        <ul>
+            <li>Développement d’applications Java avec tests unitaires.</li>
+            <li>Implémentation d’algorithmes d’appariement sur graphes pondérés.</li>
+            <li>Traitement et analyse de données via fichiers CSV.</li>
+            <li>Développement d’une IHM interactive en JavaFX.</li>
+            <li>Modélisation UML et conception orientée objet.</li>
+        </ul>
+
+        <h4>Livrable</h4>
+        <p>
+            Dépôt GitLab du projet :  
+            <a href="https://gitlab.univ-lille.fr/sae2.01-2.02/2025/A5" target="_blank">
+                Projet SAÉ 2.01 / 2.02 — GitLab
+            </a>
+        </p>
+
+        <h4>Savoir-être requis</h4>
+        <ul>
+            <li>Capacité à travailler en groupe sur plusieurs semaines.</li>
+            <li>Communication efficace et gestion des imprévus.</li>
+            <li>Organisation, rigueur et respect des délais.</li>
+        </ul>
+
+        <h4>Savoir-faire non informatiques</h4>
+        <ul>
+            <li>Organisation du travail en équipe, répartition des rôles et suivi d’avancement.</li>
+            <li>Rédaction hebdomadaire d’un rapport pour suivre l’évolution du projet.</li>
+            <li>Application de principes d’ergonomie et prise en compte des retours utilisateurs.</li>
+        </ul>
+    </div>
+</div>
 
     <!-- SAE 2.03 -->
-    <div class="project-item" onclick="toggleProject(this)">
-        <div class="project-summary">
-            <h3>SAÉ 2.03 — VM Debian automatisée</h3>
-            <p>Script d’installation automatisée d'une distribution Linux.</p>
-        </div>
-
-        <div class="project-details">
-            <img src="IMG/Gitea.png" alt="">
-            <p>
-                Automatisation de l’installation d’une Debian grâce à des scripts shell.
-                Installation de logiciels, configuration réseau, ajout d'utilisateurs,
-                et production d’un rapport détaillé en Markdown.  
-            </p>
-        </div>
+<div class="project-item" onclick="toggleProject(this)">
+    <div class="project-summary">
+        <h3>SAÉ 2.03 — VM Debian automatisée</h3>
+        <p>Automatisation complète de l'installation d'une machine virtuelle Debian.</p>
     </div>
+
+    <div class="project-details">
+        <img src="IMG/Gitea.png" alt="Illustration du projet">
+
+        <h4>Résumé du projet</h4>
+        <p>
+            Le projet consistait à configurer une machine virtuelle Debian en comprenant
+            chaque étape, depuis l’installation manuelle jusqu’à l’automatisation complète.
+            Après la création d’une VM dans VirtualBox, l’équipe a procédé à l’installation du système,
+            à la configuration des logiciels essentiels et de l’environnement graphique. 
+            Une fois les manipulations réalisées manuellement, celles-ci ont été automatisées via des
+            scripts shell. Un rapport en Markdown documente chaque étape, les choix techniques,
+            les problèmes rencontrés et les solutions mises en place, afin de permettre de reproduire
+            l’installation de manière fiable.
+        </p>
+
+        <h4>Compétences développées</h4>
+        <ul>
+            <li>Virtualisation et gestion de machines virtuelles (VirtualBox).</li>
+            <li>Installation et automatisation d’un système Linux (Debian).</li>
+            <li>Maîtrise du terminal et des commandes Linux.</li>
+            <li>Rédaction d’un rapport technique en Markdown.</li>
+        </ul>
+        <p>(Contient scripts, rapports et documents nécessaires.)</p>
+
+        <h4>Savoir-être</h4>
+        <ul>
+            <li>Travail d’équipe, coordination et communication.</li>
+            <li>Autonomie dans la résolution de problèmes techniques.</li>
+            <li>Gestion du temps et respect des échéances.</li>
+        </ul>
+
+        <h4>Bilan du groupe</h4>
+
+        <p><strong>Points forts :</strong></p>
+        <ul>
+            <li>Bonne compréhension du processus d’installation d’un OS.</li>
+            <li>Progrès significatif en résolution de problèmes techniques.</li>
+        </ul>
+
+        <p><strong>Difficultés rencontrées :</strong></p>
+        <ul>
+            <li>Automatisation complexe (ISO, scripts de post-installation).</li>
+            <li>Problème récurrent avec un script ne se lançant pas correctement.</li>
+            <li>Répartition du travail inégale, affectant motivation et efficacité.</li>
+        </ul>
+
+        <p><strong>Axes d'amélioration :</strong></p>
+        <ul>
+            <li>Renforcer la maîtrise de l’automatisation Linux.</li>
+            <li>Mieux organiser la répartition des tâches.</li>
+            <li>Améliorer la coordination au sein du groupe.</li>
+        </ul>
+    </div>
+</div>
+
 
     <!-- SAE 2.04 -->
-    <div class="project-item" onclick="toggleProject(this)">
-        <div class="project-summary">
-            <h3>SAÉ 2.04 — Jeux Olympiques</h3>
-            <p>Analyse de données des JO et création de graphiques.</p>
-        </div>
-
-        <div class="project-details">
-            <img src="IMG/rotaticvgitea.png" alt="">
-            <p>
-                Analyse de bases de données concernant les Jeux Olympiques,
-                traitement statistique, visualisation et création de tableaux comparatifs.
-            </p>
-        </div>
+<div class="project-item" onclick="toggleProject(this)">
+    <div class="project-summary">
+        <h3>SAÉ 2.04 — Jeux Olympiques</h3>
+        <p>Analyse, modélisation et visualisation de données des Jeux Olympiques.</p>
     </div>
+
+    <div class="project-details">
+        <img src="IMG/RapportJO.png" alt="Illustration du projet">
+
+        <h4>Résumé du projet</h4>
+        <p>
+            La SAÉ 2.04 consistait à analyser un ensemble de données réelles liées aux Jeux Olympiques.
+            Le projet incluait la normalisation d’une base de données, l’écriture de requêtes SQL, 
+            ainsi que la réalisation d’analyses statistiques et de visualisations. 
+            En raison d’une fuite du corrigé de la partie statistique, le projet n’a pas pu être mené entièrement,
+            limitant la mise en application des compétences prévues.
+        </p>
+
+        <h4>Compétences développées</h4>
+        <ul>
+            <li>Rédaction et exécution de requêtes SQL sur une base relationnelle.</li>
+            <li>Modélisation et normalisation de données.</li>
+            <li>Analyses statistiques descriptives.</li>
+            <li>Création et interprétation de graphiques.</li>
+            <li>Production d’un rapport structuré et critique.</li>
+        </ul>
+
+
+        <h4>Savoir-être</h4>
+        <ul>
+            <li>Travail en binôme et répartition efficace des tâches.</li>
+            <li>Rigueur dans la gestion et la présentation des données.</li>
+        </ul>
+
+        <h4>Bilan du groupe</h4>
+        <p><strong>Points forts :</strong></p>
+        <ul>
+            <li>Bonne compréhension des objectifs du projet.</li>
+            <li>Organisation initiale efficace.</li>
+        </ul>
+
+        <p><strong>Difficultés rencontrées :</strong></p>
+        <ul>
+            <li>Arrêt de la partie statistique dû à une fuite du corrigé.</li>
+            <li>Impossibilité de mener à bien les analyses prévues.</li>
+            <li>Peu d'entraînement aux soutenances orales.</li>
+        </ul>
+
+        <p><strong>Axes d'amélioration :</strong></p>
+        <ul>
+            <li>Mettre en place un plan B pour continuer à travailler les compétences clés.</li>
+            <li>Anticiper des exercices complémentaires pour maintenir les acquis.</li>
+        </ul>
+    </div>
+</div>
+
 
     <!-- SAE 2.05 -->
-    <div class="project-item" onclick="toggleProject(this)">
-        <div class="project-summary">
-            <h3>SAÉ 2.05 — JobyFind</h3>
-            <p>Application web RH de mise en relation entreprise/étudiant.</p>
-        </div>
-
-        <div class="project-details">
-            <img src="IMG/jobyfind.png" alt="">
-            <p>
-                Développement d’une application web : gestion d’offres, comptes utilisateurs,
-                filtres, tableau de bord, interface moderne et responsive. Travail en équipe
-                complète (scrum, tickets, livrables).
-            </p>
-        </div>
+<div class="project-item" onclick="toggleProject(this)">
+    <div class="project-summary">
+        <h3>SAÉ 2.05 — JobyFind</h3>
+        <p>Application web et mobile de mise en relation entre candidats et recruteurs.</p>
     </div>
 
-    <!-- SAE 2.06 -->
-    <div class="project-item" onclick="toggleProject(this)">
-        <div class="project-summary">
-            <h3>SAÉ 2.06 — Vidéo de vulgarisation scientifique</h3>
-            <p>Production d’une vidéo pédagogique complète.</p>
-        </div>
+    <div class="project-details">
+        <img src="IMG/jobyfind.png" alt="Aperçu du projet JobyFind">
 
-        <div class="project-details">
-            <p>
-                Écriture du script, tournage, montage, gestion audio et ajout de visuels.
-                Projet de vulgarisation visant à expliquer un concept scientifique de manière
-                simple et accessible.
-            </p>
-        </div>
+        <p>
+            <strong>Présentation du projet :</strong><br>
+            JobyFind est une application innovante de recrutement inspirée des mécaniques 
+            de matching des applications de rencontre. Le but est de faciliter la mise 
+            en relation entre étudiants/candidats et entreprises grâce à un système 
+            d’intérêt mutuel. Le projet inclut le développement d’une application 
+            mobile et web, une étude de marché (PESTEL, concurrence), une stratégie de 
+            communication et la préparation d’un dossier complet de présentation.  
+            Les différentes étapes ont mobilisé des compétences en UX/UI, gestion de projet, 
+            communication professionnelle et analyse commerciale.
+        </p>
+
+        <p>
+            <strong>Compétences techniques mobilisées :</strong><br>
+            • Développement mobile (iOS / Android / Web)<br>
+            • Conception d’algorithmes de matching<br>
+            • Analyse des besoins utilisateurs et modélisation fonctionnelle<br>
+            • Gestion de projet (planification, communication, suivi)<br>
+            • Création d’une stratégie de communication numérique
+        </p>
+
+
+        <p>
+            <strong>Savoir-être développés :</strong><br>
+            • Travail en équipe et communication efficace<br>
+            • Esprit d’initiative et autonomie dans la gestion des tâches
+        </p>
+
+        <p>
+            <strong>Autres compétences non informatiques :</strong><br>
+            • Analyse de marché (PESTEL, étude concurrentielle)<br>
+            • Création de supports professionnels (pitch deck, plaquette)<br>
+            • Élaboration d’une stratégie financière et commerciale
+        </p>
+
+        <hr>
+
+        <p>
+            <strong>Bilan du groupe :</strong><br>
+            • Excellente complémentarité des rôles (dév., communication, gestion, budget)<br>
+            • Collaboration fluide grâce à Trello, Asana et aux réunions régulières<br>
+            • Forte créativité dans la conception de JobyFind et dans son positionnement
+        </p>
+
+        <p>
+            <strong>Difficultés rencontrées :</strong><br>
+            • Intégration des contraintes légales, culturelles et éthiques<br>
+            • Sensibilisation au recrutement digital face aux méthodes classiques<br>
+            • Mise en place d’un système fiable de vérification des profils
+        </p>
+
+        <p>
+            <strong>Pistes d'amélioration :</strong><br>
+            • Meilleure anticipation pour équilibrer la charge de travail<br>
+            • Formalisation plus rigoureuse des décisions et documents<br>
+            • Développement renforcé de la communication externe (teasing, préinscriptions)
+        </p>
+    </div>
+</div>
+
+
+    <!-- SAE 2.06 -->
+<div class="project-item" onclick="toggleProject(this)">
+    <div class="project-summary">
+        <h3>SAÉ 2.06 — Vidéo de vulgarisation scientifique</h3>
+        <p>Production d’une vidéo pédagogique complète.</p>
+    </div>
+
+    <div class="project-details">
+
+        <h4>Résumé du projet</h4>
+        <p>
+            Le projet consistait à concevoir et réaliser une vidéo pédagogique expliquant 
+            un concept informatique : la génération procédurale dans les jeux vidéo. 
+            L’objectif était de vulgariser un sujet technique auprès d’un public non expert, 
+            tout en garantissant la qualité scientifique et la rigueur du contenu.  
+            Nous avons mobilisé des compétences en recherche documentaire, rédaction de 
+            scénario, narration audiovisuelle et montage vidéo. 
+            Les connaissances mobilisées incluaient les algorithmes de génération 
+            procédurale (bruit de Perlin, marche aléatoire), les principes de game design, 
+            et l’utilisation d’outils collaboratifs comme Google Drive et GitHub. 
+            Une attention particulière a été portée à l’expression orale pour réaliser une 
+            voix-off claire et engageante.
+        </p>
+
+        <h4>Compétences développées</h4>
+        <ul>
+            <li>Recherche, compréhension et vulgarisation d’un concept informatique complexe.</li>
+            <li>Écriture d’un scénario pédagogique adapté à la vidéo.</li>
+            <li>Montage vidéo, enregistrement et traitement de voix-off.</li>
+            <li>Utilisation d’outils collaboratifs (Google Drive, GitHub).</li>
+            <li>Compréhension des algorithmes de génération procédurale.</li>
+        </ul>
+
+        <h4>Livrable</h4>
+        <p>
+            Vidéo finale disponible ici :  
+            <a href="https://youtu.be/e6r2IHpKgMY" target="_blank">
+                Vidéo de vulgarisation — Génération procédurale
+            </a>
+        </p>
+
+        <h4>Savoir-être requis</h4>
+        <ul>
+            <li>Collaboration efficace et répartition équitable des tâches.</li>
+            <li>Organisation, autonomie et respect des délais.</li>
+        </ul>
+
+        <h4>Savoir-faire non informatiques</h4>
+        <ul>
+            <li>Écriture et structuration d’un discours oral (voix-off).</li>
+            <li>Création d’un scénario visuel et choix pertinents d’illustrations.</li>
+            <li>Analyse critique de vidéos existantes pour identifier les bonnes pratiques de vulgarisation.</li>
+        </ul>
+
+        <h4>Bilan du groupe</h4>
+
+        <strong>Points forts</strong>
+        <ul>
+            <li>Bonne répartition des tâches (recherche, scénario, montage).</li>
+            <li>Communication fluide via Drive et Discord.</li>
+            <li>Implication sérieuse et respect des échéances.</li>
+        </ul>
+
+        <strong>Difficultés rencontrées</strong>
+        <ul>
+            <li>Trouver des visuels libres de droits pertinents.</li>
+            <li>Adapter le discours pour un public non spécialiste.</li>
+            <li>Synchronisation précise de la voix-off avec les images.</li>
+        </ul>
+
+        <strong>Axes d’amélioration</strong>
+        <ul>
+            <li>Mieux anticiper la durée réelle du montage.</li>
+            <li>Prévoir les recherches d'illustrations dès le script.</li>
+            <li>Formaliser davantage les réunions avec des comptes rendus.</li>
+        </ul>
+
+    </div>
+</div>
+
+
+
+       <!-- ---------------------- SEMESTRE 1 ---------------------- -->
+    <h3 class="semester-title">Semestre 1</h3>
+
+    <!-- SAE 1.02 -->
+    <div class="project-item" onclick="toggleProject(this)">
+       <div class="project-summary">
+    <h3>SAÉ 1.02 — Questions pour un Chevalier</h3>
+    <p>Jeu ludo-pédagogique médiéval en Java.</p>
+</div>
+
+<div class="project-details">
+    <img src="IMG/QuestionChevalier.png" alt="Illustration du jeu Questions pour un Chevalier">
+
+    <p>
+        <strong>Description du jeu :</strong><br>
+        « Questions pour un Chevalier » est un jeu ludo-pédagogique se déroulant dans un univers médiéval.
+        Le joueur incarne un chevalier de la cité de Culturia, chargé de secourir une princesse kidnappée.
+        Pour progresser, il doit traverser la redoutable Forêt de la Mort, où des créatures mythiques
+        lui posent des questions portant sur différentes périodes historiques.
+        Chaque bonne réponse le rapproche de son objectif, tandis qu’une erreur peut entraîner des
+        conséquences lourdes. <br><br>
+
+        Le jeu propose trois modes distincts :
+    </p>
+
+    <ul>
+        <li><strong>Mode histoire</strong> — aventure narrative avec progression scénarisée.</li>
+        <li><strong>Mode deux joueurs</strong> — affrontement basé sur les connaissances historiques.</li>
+        <li><strong>Mode infini</strong> — enchaînement de questions avec sauvegarde des scores.</li>
+    </ul>
+
+    <p>
+        Ce projet allie apprentissage et divertissement tout en proposant une atmosphère immersive.
+    </p>
+
+    <p>
+        <strong>Travail en binôme :</strong><br>
+        L’organisation s’est globalement bien déroulée. Nous avons parfois réparti les tâches de manière
+        un peu désordonnée, mais nous avons su nous adapter et atteindre nos objectifs à chaque étape
+        du développement. Cette collaboration nous a permis d’améliorer notre communication et notre
+        efficacité.
+    </p>
+
+    <p>
+        <strong>Compétences acquises :</strong>
+    </p>
+
+    <ul>
+        <li><strong>Techniques :</strong> programmation modulaire, gestion et manipulation de fichiers,
+            système de sauvegarde.</li>
+        <li><strong>Outils :</strong> IJava, éditeur de texte.</li>
+        <li><strong>Savoir-être :</strong> travail en équipe, gestion du temps, adaptabilité.</li>
+    </ul>
+</div>
+
+    </div>
+
+    <!-- SAE 1.05 / 1.06 -->
+    <div class="project-item" onclick="toggleProject(this)">
+      <div class="project-summary">
+    <h3>SAÉ 1.05 / 1.06 — Site Web + Newsletter</h3>
+    <p>Création d’un site web complet accompagné d’une newsletter professionnelle.</p>
+</div>
+
+<div class="project-details">
+    <img src="IMG/SiteNintendo.png" alt="Aperçu du site web développé">
+
+    <p>
+        <strong>Description du projet :</strong><br>
+        Ce projet avait pour objectif de concevoir un site web complet en HTML/CSS 
+        à partir d’une maquette réalisée en amont afin d’assurer une structure claire, un design cohérent 
+        et un rendu professionnel. Nous devions également rédiger une newsletter reprenant les codes 
+        utilisés dans le monde professionnel, simulant une véritable campagne de communication destinée 
+        à promouvoir le site nouvellement créé.
+        <br><br>
+        Ce travail nous a permis de renforcer nos compétences en développement web, 
+        tout en découvrant les enjeux de la communication numérique à travers la création d’un email 
+        structuré, attractif et adapté à un public ciblé. Le projet incluait également un important volet 
+        d’organisation, avec la gestion du planning, la répartition des tâches et la collaboration en groupe.
+    </p>
+
+    <p><strong>Compétences techniques mobilisées :</strong></p>
+    <ul>
+        <li>Création d’un site web complet en <strong>HTML/CSS</strong>.</li>
+        <li>Réalisation d’une <strong>maquette</strong> pour guider le développement.</li>
+        <li>Conception d’une <strong>newsletter professionnelle</strong>.</li>
+        <li>Responsive design (adaptation mobile / tablette / PC).</li>
+        <li>Validation W3C et optimisation de l’expérience utilisateur.</li>
+    </ul>
+
+    <p><strong>Livrables informatiques :</strong></p>
+    <ul>
+        <li>Site web complet — <em>Structure HTML, styles CSS, pages reliées entre elles</em>.</li>
+        <li>Newsletter formatée et conforme aux standards d’un envoi professionnel.</li>
+        <li>Maquette du site (PDF ou image).</li>
+        <li>Lien : (GitHub, ZIP du projet, ou hébergement) — <em>À ajouter si souhaité</em>.</li>
+    </ul>
+
+    <p><strong>Livrables hors informatique :</strong></p>
+    <ul>
+        <li>Analyse et justification des choix visuels (maquette, couleurs, ergonomie).</li>
+        <li>Newsletter rédigée dans un style professionnel.</li>
+    </ul>
+
+    <p><strong>Savoirs-être sollicités :</strong></p>
+    <ul>
+        <li><strong>Organisation :</strong> gestion des délais, suivi du planning, coordination du projet.</li>
+        <li><strong>Coopération :</strong> communication au sein du groupe, prise de décision collective.</li>
+    </ul>
+
+    <p><strong>Savoirs-faire non techniques :</strong></p>
+    <ul>
+        <li><strong>Communication :</strong> rédaction claire, vulgarisation et structuration des idées.</li>
+        <li><strong>Gestion de projet :</strong> planification, répartition des tâches, analyse des risques.</li>
+    </ul>
+
+    <p><strong>Mon bilan personnel :</strong><br>
+        Ce projet m’a permis d’approfondir mes compétences en développement web, en particulier 
+        la création de sites composés de plusieurs pages et l’intégration d’éléments avancés, 
+        comme les formulaires ou les liens internes. J’ai également appris à utiliser des outils de 
+        collaboration et à structurer davantage mon travail. Cette expérience m’a aidé à mieux comprendre 
+        les enjeux d’un site professionnel et à améliorer ma rigueur méthodologique.
+    </p>
+
+    <p><strong>Mes difficultés :</strong><br>
+        La gestion des liens internes entre les différentes pages du site a été l’un des défis les plus 
+        complexes, surtout au début du projet. L’intégration et la validation des formulaires ont également 
+        demandé un apprentissage supplémentaire, notamment concernant la validation et la gestion d’erreurs. 
+        Ces difficultés m’ont toutefois permis de progresser rapidement et d’acquérir des compétences solides.
+    </p>
+
+    <p><strong>Points à améliorer :</strong><br>
+        Je dois encore améliorer la gestion de mon temps et ma capacité à prioriser certaines tâches. 
+        Je souhaite également continuer à renforcer ma communication au sein des projets de groupe 
+        afin d’être encore plus efficace dans les futurs travaux collaboratifs.
+    </p>
+
+    <p><strong>Conclusion :</strong><br>
+        Ce projet a été une excellente opportunité pour développer mon autonomie, mes compétences en 
+        développement web et ma capacité à travailler en équipe. Si je devais le refaire, je mettrais 
+        davantage l’accent sur la planification initiale. Cette expérience confirme mon intérêt pour 
+        les technologies numériques et me pousse à continuer à progresser en développement et en gestion 
+        de projet. Je me sens maintenant mieux préparé pour les défis du BUT 2.
+    </p>
+</div>
+
+    </div>
+
+    <!-- SAE 1.03 -->
+   <div class="project-item" onclick="toggleProject(this)">
+    <div class="project-summary">
+        <h3>SAÉ 1.03 — Installation de poste de développement</h3>
+        <p>Installation d’une machine virtuelle Debian et configuration d’un environnement complet de développement.</p>
+    </div>
+
+    <div class="project-details">
+        <img src="IMG/VMdebian.png" alt="Capture de la VM Debian">
+        <p>
+            Projet d’installation et de configuration d’une machine virtuelle Debian sous VirtualBox.  
+            Gestion des utilisateurs et des permissions, installation de logiciels via APT, configuration 
+            du réseau, partitionnement, GRUB et automatisation de certaines tâches via le terminal.  
+            Ce travail a permis d’acquérir les bases solides de l’administration système Linux 
+            et de comprendre les principes essentiels de la virtualisation.
+        </p>
+
+        <p>
+            <strong>Compétences acquises :</strong><br>
+            • Installation et configuration d’un OS Linux<br>
+            • Gestion des utilisateurs et permissions Unix<br>
+            • Manipulation du gestionnaire de paquets APT<br>
+            • Configuration réseau et système (partitions, GRUB)<br>
+            • Automatisation simple via le shell
+        </p>
+
+        <p>
+            <strong>Bilan personnel :</strong><br>
+            J’ai su installer et configurer entièrement la machine, et j’ai gagné en autonomie sur 
+            les recherches techniques nécessaires. Certaines étapes, comme la gestion des partitions 
+            et du réseau, ont demandé un effort plus important, mais elles m’ont permis de renforcer 
+            mes compétences et de mieux comprendre le fonctionnement interne d’un système Linux.
+        </p>
+    </div>
+</div>
+
     </div>
 
 </section>
