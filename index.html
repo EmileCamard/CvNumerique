@@ -149,10 +149,17 @@ function toggleProject(project) {
         <br><br>
        <section id="Projet">
     <br>
+
     <h2>Mes projets</h2>
     <br>
+        <!-- NAVIGATION DES SEMESTRES -->
+<div class="semester-nav">
+    <a href="#sem3">Semestre 3</a>
+    <a href="#sem2">Semestre 2</a>
+    <a href="#sem1">Semestre 1</a>
+</div>
     <!-- ---------------------- SEMESTRE 3 ---------------------- -->
-    <h3 class="semester-title">Semestre 3</h3>
+<h3 class="semester-title" id="sem3">Semestre 3</h3>
 <div class="project-item" onclick="toggleProject(this)">
     <div class="project-summary">
         <h3>SAÉ 3.02 — Labyrinthes</h3>
@@ -204,7 +211,7 @@ et <strong>gestion de projet en équipe</strong>.
 </div>
 
     <!-- ---------------------- SEMESTRE 2 ---------------------- -->
-    <h3 class="semester-title">Semestre 2</h3>
+<h3 class="semester-title" id="sem2">Semestre 2</h3>
 
 <!-- SAE 2.01 / 2.02 -->
 <div class="project-item" onclick="toggleProject(this)">
@@ -237,14 +244,6 @@ et <strong>gestion de projet en équipe</strong>.
             <li>Développement d’une IHM interactive en JavaFX.</li>
             <li>Modélisation UML et conception orientée objet.</li>
         </ul>
-
-        <h4>Livrable</h4>
-        <p>
-            Dépôt GitLab du projet :  
-            <a href="https://gitlab.univ-lille.fr/sae2.01-2.02/2025/A5" target="_blank">
-                Projet SAÉ 2.01 / 2.02 — GitLab
-            </a>
-        </p>
 
         <h4>Savoir-être requis</h4>
         <ul>
@@ -537,7 +536,7 @@ et <strong>gestion de projet en équipe</strong>.
 
 
        <!-- ---------------------- SEMESTRE 1 ---------------------- -->
-    <h3 class="semester-title">Semestre 1</h3>
+<h3 class="semester-title" id="sem1">Semestre 1</h3>
 
     <!-- SAE 1.02 -->
     <div class="project-item" onclick="toggleProject(this)">
@@ -624,20 +623,6 @@ et <strong>gestion de projet en équipe</strong>.
         <li>Conception d’une <strong>newsletter professionnelle</strong>.</li>
         <li>Responsive design (adaptation mobile / tablette / PC).</li>
         <li>Validation W3C et optimisation de l’expérience utilisateur.</li>
-    </ul>
-
-    <p><strong>Livrables informatiques :</strong></p>
-    <ul>
-        <li>Site web complet — <em>Structure HTML, styles CSS, pages reliées entre elles</em>.</li>
-        <li>Newsletter formatée et conforme aux standards d’un envoi professionnel.</li>
-        <li>Maquette du site (PDF ou image).</li>
-        <li>Lien : (GitHub, ZIP du projet, ou hébergement) — <em>À ajouter si souhaité</em>.</li>
-    </ul>
-
-    <p><strong>Livrables hors informatique :</strong></p>
-    <ul>
-        <li>Analyse et justification des choix visuels (maquette, couleurs, ergonomie).</li>
-        <li>Newsletter rédigée dans un style professionnel.</li>
     </ul>
 
     <p><strong>Savoirs-être sollicités :</strong></p>

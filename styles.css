@@ -405,5 +405,46 @@ footer {
     backdrop-filter: blur(8px);
 }
 
+/* NAVIGATION DES SEMESTRES */
+.semester-nav {
+    position: sticky;
+    top: 60px; /* juste sous la nav principale */
+    z-index: 999;
+    
+    background: rgba(255, 255, 255, 0.1); /* transparent léger */
+    backdrop-filter: blur(6px); /* effet flou derrière le menu */
+    padding: 0.6rem 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2); /* subtil */
+    margin-top: 1rem;
+    border-radius: 8px;
+}
 
+.semester-nav a {
+    color: #1e90ff; /* bleu visible et professionnel */
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 0.3rem 0.6rem;
+    transition: all 0.25s ease;
+    border-radius: 6px;
+}
 
+.semester-nav a:hover {
+    background: rgba(30, 144, 255, 0.15); /* effet léger au survol */
+    color: #0a3d62;
+    transform: translateY(-2px);
+}
+
+/* Ajout d'un gap vertical supplémentaire pour les sections semestre */
+section {
+    scroll-margin-top: 70px; /* garde le scroll correct */
+    margin-bottom: 3rem;     /* augmente l'espace entre les sections */
+}
+
+/* Ajuste le scroll pour que les titres ne soient pas cachés derrière le nav */
+.semester-title {
+    scroll-margin-top: 120px; /* hauteur nav principale + semester-nav */
+}
