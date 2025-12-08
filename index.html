@@ -719,15 +719,21 @@ et <strong>gestion de projet en équipe</strong>.
             </div>
                         <div class="contact-form">
                 <h3>Envoyer un message :</h3>
-                <form action="mailto:emile.camard@gmail.com" method="post" enctype="text/plain">
-                    <label for="name">Nom :</label><br>
-                    <input type="text" id="name" name="name" required><br>
-                    <label for="email">Email :</label><br>
-                    <input type="email" id="email" name="email" required><br>
-                    <label for="message">Message :</label><br>
-                    <textarea id="message" name="message" rows="5" required></textarea><br>
-                    <button type="submit">Envoyer</button>
-                </form>
+<form
+  action="https://formspree.io/f/xgvglzyo"
+  method="POST"
+>
+  <label>
+    Your email:
+    <input type="email" name="email">
+  </label>
+  <label>
+    Your message:
+    <textarea name="message"></textarea>
+  </label>
+  <!-- your other form fields go here -->
+  <button type="submit">Send</button>
+</form>
             </div>
         <br><br>
             <div class="download">
