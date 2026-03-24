@@ -448,3 +448,8 @@ section {
 .semester-title {
     scroll-margin-top: 120px; /* hauteur nav principale + semester-nav */
 }
+.project-details {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+}
