@@ -154,8 +154,147 @@ function toggleProject(project) {
     <br>
         <!-- NAVIGATION DES SEMESTRES -->
 <div class="semester-nav">
+    <a href="#sem4">Semestre 4</a>
     <a href="#sem3">Semestre 3</a>
     <a href="#sem2">Semestre 2</a>
+</div>
+
+
+<h3 class="semester-title" id="sem4">Semestre 4</h3>
+    <!-- ---------------------- SEMESTRE 4 ---------------------- -->
+<div class="project-item" onclick="toggleProject(this)">
+    <div class="project-summary">
+        <h3>SAÉ S4.A02.1 — API REST </h3>
+        <p>Conception et développement d’une API REST complète en Java EE pour la gestion de collecte de déchets.</p>
+    </div>
+
+    <div class="project-details">
+        <img src="IMG/Bruno.png" alt="Illustration du projet">
+
+        <h4>Résumé du projet</h4>
+        <p>
+Le projet EcoDrop consistait à concevoir et développer une API REST complète en Java EE permettant de gérer
+un système de collecte de déchets spécifiques (batteries, textiles, électronique).
+L’application permet de gérer un catalogue de types de déchets, des points de collecte,
+ainsi que les dépôts réalisés par les utilisateurs.
+
+Nous avons mis en place une architecture REST respectant les standards HTTP, avec gestion fine des codes de retour,
+support des formats JSON et XML, et intégration d’une logique métier complète (gestion du remplissage des points,
+leaderboard des utilisateurs, validation des dépôts, etc.).
+
+Le projet inclut également un système de sécurisation par token avec gestion des rôles (USER / ADMIN),
+ainsi qu’une organisation rigoureuse du code avec DAO, DTO et séparation des couches.
+Des tests automatisés ont été réalisés via Bruno, et un outil d’import CSV a été développé pour alimenter la base de données.
+Ce projet nous a permis de maîtriser la conception d’API robustes et sécurisées.
+        </p>
+
+        <h4>Compétences techniques développées</h4>
+        <ul>
+            <li>Développement d’API REST en Java EE</li>
+            <li>Gestion des requêtes HTTP (GET, POST, PUT, PATCH, DELETE) et des codes de retour</li>
+            <li>Conception de bases de données relationnelles et requêtes SQL</li>
+            <li>Architecture logicielle (DAO, DTO, séparation des couches)</li>
+            <li>Sérialisation multi-format (JSON / XML)</li>
+            <li>Sécurisation par token et gestion des rôles utilisateurs</li>
+            <li>Implémentation de logique métier (leaderboard, taux de remplissage, validation)</li>
+            <li>Tests d’API avec Bruno et scénarios automatisés</li>
+            <li>Import de données via fichiers CSV en Java</li>
+        </ul>
+
+        <h4>Savoir-être et compétences transversales</h4>
+        <ul>
+            <li>Travail en équipe sur un projet structuré</li>
+            <li>Organisation et découpage en fonctionnalités</li>
+            <li>Rigueur dans la conception et le respect des standards REST</li>
+            <li>Analyse et résolution de problèmes techniques complexes</li>
+            <li>Rédaction de documentation technique claire (Markdown)</li>
+        </ul>
+
+        <h4>Outils et méthodes</h4>
+        <ul>
+            <li>Java EE (JAX-RS)</li>
+            <li>PostgreSQL / SQL</li>
+            <li>Bruno (tests d’API)</li>
+            <li>Git / GitHub pour le versioning</li>
+            <li>Markdown pour la documentation</li>
+            <li>CSV pour l’import de données</li>
+        </ul>
+
+        <a href="https://github.com/EmileCamard/SAE-API-REST" target="_blank">
+            <strong>Code source disponible sur GitHub</strong>
+        </a>
+    </div>
+</div>
+<div class="project-item" onclick="toggleProject(this)">
+    <div class="project-summary">
+        <h3>SAÉ S4 — Jeu multijoueur (Shoot Them Up)</h3>
+        <p>Développement d’un jeu en ligne multijoueur en JavaScript avec architecture client-serveur en WebSocket.</p>
+    </div>
+
+    <div class="project-details">
+        <img src="IMG/saeJs.png" alt="Illustration du projet">
+
+        <h4>Résumé du projet</h4>
+        <p>
+Ce projet consistait à concevoir et développer un jeu en ligne multijoueur de type "shoot them up".
+Le jeu repose sur une architecture client-serveur utilisant Node.js et Socket.io, permettant la communication en temps réel entre les joueurs.
+
+Le joueur contrôle un avatar sur un plateau 2D, doit éviter des ennemis, tirer pour les détruire et récupérer des bonus pour améliorer ses capacités.
+Le jeu propose plusieurs fonctionnalités : système de score, tableau des meilleurs joueurs, écran de fin avec statistiques, ainsi qu’un mode multijoueur coopératif.
+
+Nous avons également implémenté des mécaniques avancées comme l’apparition progressive d’ennemis, un boss avec intelligence artificielle,
+et une gestion complète des collisions (joueurs, ennemis, projectiles, bonus).
+Tous les assets graphiques ont été réalisés par l’équipe, renforçant l’identité visuelle du jeu.
+        </p>
+
+        <h4>Compétences techniques développées</h4>
+        <ul>
+            <li>Développement JavaScript (front-end et back-end)</li>
+            <li>Programmation temps réel avec WebSocket (Socket.io)</li>
+            <li>Manipulation de canvas pour le rendu graphique 2D</li>
+            <li>Architecture client-serveur et synchronisation multijoueur</li>
+            <li>Gestion des collisions (hitbox) et des interactions</li>
+            <li>Implémentation d’intelligence artificielle (ennemis, boss)</li>
+            <li>Gestion des événements et des états du jeu</li>
+            <li>Tests unitaires et validation des fonctionnalités</li>
+        </ul>
+
+        <h4>Savoir-être et compétences transversales</h4>
+        <ul>
+            <li>Travail en équipe et coordination sur un projet complexe</li>
+            <li>Organisation via découpage en tâches (issues, milestones)</li>
+            <li>Capacité d’adaptation face aux difficultés techniques</li>
+            <li>Résolution de problèmes (synchronisation, collisions, gameplay)</li>
+            <li>Créativité dans la conception du gameplay et du design</li>
+        </ul>
+
+        <h4>Outils et méthodes</h4>
+        <ul>
+            <li>JavaScript (Canvas API)</li>
+            <li>Node.js et Socket.io</li>
+            <li>Git / GitLab pour le versioning</li>
+            <li>Organisation agile (issues, kanban)</li>
+            <li>Tests unitaires</li>
+        </ul>
+
+        <h4>Difficultés rencontrées</h4>
+        <ul>
+            <li>Synchronisation des joueurs en temps réel via WebSocket</li>
+            <li>Gestion des hitbox et des collisions fiables</li>
+            <li>Équilibrage de la difficulté des ennemis et du gameplay</li>
+            <li>Refactorisation du code pour améliorer sa structure</li>
+        </ul>
+
+        <h4>Améliorations possibles</h4>
+        <ul>
+            <li>Ajout de nouveaux ennemis et boss</li>
+            <li>Amélioration de l’intelligence artificielle</li>
+            <li>Ajout de sons et musiques immersives</li>
+            <li>Développement d’une version mobile</li>
+        </ul>
+ <a href="https://github.com/EmileCamard/SAE-js-game.git" target="_blank"><strong>Code source disponible sur GitHub</strong></a>
+    </div>
+
 </div>
     <!-- ---------------------- SEMESTRE 3 ---------------------- -->
 <h3 class="semester-title" id="sem3">Semestre 3</h3>
