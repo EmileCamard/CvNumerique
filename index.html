@@ -35,38 +35,85 @@ function toggleProject(project) {
     <section id="Accueil" class="hero">
         <div class="hero-content">
 
-            <!-- Texte -->
-            <div class="hero-text">
-                <h1 class="hero-name">Emile CAMARD</h1>
-                <h2 class="hero-title">Étudiant en BUT Informatique – Université de Lille</h2>
 
-                <p class="hero-subtitle">
-                    À la recherche d’un <strong>stage d’avril à juin 2026</strong> (8–12 semaines)<br>
-                    Développement • Systèmes • Algorithmique • Gestion de projet
-                </p>
+        <!-- TEXTE -->
+        <div class="hero-text">
 
-                <p class="hero-description">
-                Étudiant en 2ᵉ année de BUT Informatique à l’Université de Lille, passionné par 
-                le développement logiciel, Linux, l’algorithmique et la gestion de projet.  
-                Curieux, motivé et impliqué, je participe à de nombreux projets Java, SQL, web,
-                et administration système.  
-                Fan de basketball et de jeux de stratégie, j’aime travailler en équipe 
-                et résoudre des problèmes complexes.
-                </p>
+            <p class="hero-tag">
+                Portfolio • BUT Informatique • Université de Lille
+            </p>
 
-                <div class="hero-buttons">
-                    <a href="#Projet" class="btn-primary">Voir mes projets</a>
-                    <a href="#contact" class="btn-secondary">Me contacter</a>
+            <h1 class="hero-name">Emile CAMARD</h1>
+
+            <h2 class="hero-title">
+                Développement logiciel • Web • Systèmes Linux
+            </h2>
+
+            <p class="hero-subtitle">
+                Étudiant en 2ᵉ année de BUT Informatique, actuellement en stage chez
+                <strong>EKEEP IT</strong>, passionné par le développement logiciel,
+                les architectures web et la conception de projets techniques.
+            </p>
+
+            <p class="hero-description">
+                Au fil de mon parcours universitaire et de mes projets personnels,
+                j’ai développé des compétences en développement Java, SQL,
+                JavaScript,gestion de projet agile.
+
+                J’apprécie particulièrement les projets mêlant réflexion,
+                algorithmique et créativité, notamment à travers le développement
+                de jeux vidéo sur Unity et la création d’applications interactives.
+
+                Curieux, autonome et motivé, je souhaite poursuivre mon évolution
+                dans le domaine du développement logiciel et des technologies web,
+                avec l’objectif de continuer à progresser au sein de projets
+                techniques concrets et collaboratifs.
+            </p>
+
+            <!-- OBJECTIFS -->
+            <div class="hero-goals">
+                <div class="goal-card">
+                    <span>🎯</span>
+                    <p class="hero-description">
+                        Recherche d’opportunités en développement logiciel
+                    </p>
+                </div>
+
+
+                <div class="goal-card">
+                    <span>🚀</span>
+                    <p class="hero-description">
+                        Objectif : poursuivre en développement full-stack
+                    </p>
                 </div>
             </div>
 
-            <!-- Photo -->
-            <div class="hero-photo">
-                <img src="IMG/CAMARD portraits iut info-356(1).jpg" alt="Photo Emile Camard">
+            <!-- BOUTONS -->
+            <div class="hero-buttons">
+                <a href="#Projet" class="btn-primary">
+                    Voir mes projets
+                </a>
+
+                <a href="#contact" class="btn-secondary">
+                    Me contacter
+                </a>
             </div>
 
         </div>
-    </section>
+
+        <!-- PHOTO -->
+        <div class="hero-photo">
+            <img
+                src="IMG/CAMARD portraits iut info-356(1).jpg"
+                alt="Photo Emile Camard"
+            >
+        </div>
+
+    </div>
+</section>
+
+</header>
+
 </header>
 
 
@@ -99,8 +146,11 @@ function toggleProject(project) {
 <section id="Experience">
     <br>
     <h2>Expérience</h2>
+
+
+   <h3>Stage de 2ᵉ année BUT Informatique — EKEEP IT (Mai 2026 – Juillet 2026)</h3> <p> Actuellement en stage chez <strong>EKEEP IT</strong>, je participe au développement d’applications web dans un environnement professionnel utilisant une méthodologie agile. Ce stage est toujours en cours et me permet de découvrir concrètement le fonctionnement d’une équipe de développement ainsi que les différentes étapes d’un projet logiciel en entreprise. </p>
     
-    <h3>Stage de seconde — 3Axes Institut (2022)</h3>
+   <h3>Stage de seconde — 3Axes Institut (2022)</h3>
     <p>
         Découverte des métiers de l’informatique et du jeu vidéo.  
         Initiation aux outils de création numérique (Photoshop, Blender) et observation des workflows
@@ -127,6 +177,9 @@ function toggleProject(project) {
                 <li>HTML / CSS</li>
                 <li>SQL (requêtes et modélisation)</li>
                 <li>Bases de l’algorithmique (optimisation, graphes…)</li>
+                <li>JavaScript (TypeScript, React, Node.js)</li>
+                <li>Unity (C#)</li>
+                <li>API REST</li>
             </ul>
 
             <h3>Systèmes & Outils</h3>
@@ -134,6 +187,7 @@ function toggleProject(project) {
                 <li>Linux / Debian — Administration système, VM</li>
                 <li>VirtualBox</li>
                 <li>Terminal & Shell scripting</li>
+                <li> Docker</li>
 
             </ul>
 
@@ -186,7 +240,9 @@ Le projet inclut également un système de sécurisation par token avec gestion 
 ainsi qu’une organisation rigoureuse du code avec DAO, DTO et séparation des couches.
 Des tests automatisés ont été réalisés via Bruno, et un outil d’import CSV a été développé pour alimenter la base de données.
 Ce projet nous a permis de maîtriser la conception d’API robustes et sécurisées.
-        </p>
+Nous nous sommes bien répartit la tache, effectuant chacun d'une table différente. Je me suis aussi occupé de rélaisé la documentation de l'API en Markdown.
+
+</p>
 
         <h4>Compétences techniques développées</h4>
         <ul>
@@ -219,6 +275,19 @@ Ce projet nous a permis de maîtriser la conception d’API robustes et sécuris
             <li>Markdown pour la documentation</li>
             <li>CSV pour l’import de données</li>
         </ul>
+        <h4>Difficultés rencontrées</h4>
+        <ul>
+            <li>Nous avons eu du mal avec la gestion de la sécurité.</li>
+            <li>Nous avons eu un problème avec la gestion du temps, nous pensions que la deadline était plus éloignée.</li>
+        </ul>
+
+        <h4>Améliorations possibles</h4>
+        <ul>
+            <li>Mettre en place plus de test bruno pour couvrir les scénarios d'erreur</li>
+            <li>Améliorer la documentation de l'API</li>
+            <li> Mieux gérer notre temps</li>
+        </ul>
+
 
         <a href="https://github.com/EmileCamard/SAE-API-REST" target="_blank">
             <strong>Code source disponible sur GitHub</strong>
@@ -245,6 +314,7 @@ Le jeu propose plusieurs fonctionnalités : système de score, tableau des meill
 Nous avons également implémenté des mécaniques avancées comme l’apparition progressive d’ennemis, un boss avec intelligence artificielle,
 et une gestion complète des collisions (joueurs, ennemis, projectiles, bonus).
 Tous les assets graphiques ont été réalisés par l’équipe, renforçant l’identité visuelle du jeu.
+J'ai surtout travaillé sur la partie front-end (client) que ce soit avec la mise en place de la SPA/router ou alors avec la conception des sprites et leur affichage dynamique sur le canvas.
         </p>
 
         <h4>Compétences techniques développées</h4>
@@ -318,6 +388,7 @@ et intégration d’une boutique où le joueur peut acheter des bonus.
 Pour enrichir l’expérience, nous avons également ajouté un thème Bob l’Éponge et des éléments graphiques interactifs. 
 Ce projet nous a permis de combiner des compétences en algorithmique, structures de données, programmation orientée objet, développement d’interface graphique
 et gestion de projet en équipe.
+Lors de ce projet, j'ai surtout travaillé sur la partie documentation, l'algorithme de génération du mode libre et la mise en place de la boutique.
 </p>
 
         <h4>Compétences techniques développées</h4>
@@ -371,7 +442,8 @@ sans interface graphique, ce qui nous a permis de maîtriser l’environnement e
 Le projet s’est déroulé en plusieurs étapes : configuration réseau, installation des services, 
 mise en place d’un reverse proxy avec Nginx et sécurisation de l’ensemble. 
 Cette SAÉ nous a permis de comprendre le fonctionnement global d’une infrastructure web 
-et les enjeux liés à la mise en production d’un service.
+et les enjeux liés à la mise en production d’un service et les recherches pour la docs.
+J'ai surtout travaillé sur la mise en place du serveur Synapse 
 </p>
 
     <h4>Compétences techniques développées</h4>
@@ -431,6 +503,8 @@ et les enjeux liés à la mise en production d’un service.
             une interface graphique en JavaFX, et une architecture orientée objet en Java.
             Le projet mobilise des notions de modélisation UML, traitement de fichiers CSV, 
             structures de données et gestion rigoureuse de projet via Git.
+            J'ai surtout fait de la documentation et l'aspect graphique.
+
         </p>
         
 
@@ -484,6 +558,8 @@ et les enjeux liés à la mise en production d’un service.
             scripts shell. Un rapport en Markdown documente chaque étape, les choix techniques,
             les problèmes rencontrés et les solutions mises en place, afin de permettre de reproduire
             l’installation de manière fiable.
+
+
         </p>
 
         <h4>Compétences développées</h4>
@@ -526,6 +602,7 @@ et les enjeux liés à la mise en production d’un service.
             ainsi que la réalisation d’analyses statistiques et de visualisations. 
             En raison d’une fuite du corrigé de la partie statistique, le projet n’a pas pu être mené entièrement,
             limitant la mise en application des compétences prévues.
+            J'ai surtout fait les requetes SQL et les resultats.
         </p>
 
         <h4>Compétences développées</h4>
@@ -563,7 +640,8 @@ et les enjeux liés à la mise en production d’un service.
         <p>
             <strong>Présentation du projet :</strong><br>
 Ce projet nous a permis de développer de nombreuses compétences en gestion de projet et en travail d’équipe. Nous avons appris à organiser notre travail en répartissant les rôles et en respectant des délais grâce à des outils comme le diagramme de Gantt. La création de l’application JobyFind nous a aussi permis de stimuler notre créativité et notre esprit d’innovation. Nous avons travaillé sur l’analyse d’un besoin réel, ce qui nous a aidés à mieux comprendre les attentes du marché et des utilisateurs. Ce projet nous a également permis de développer des compétences en communication, notamment pour présenter nos idées de manière claire et convaincante. Nous avons appris à réaliser une étude de marché, à identifier une clientèle cible et à analyser la concurrence. De plus, nous avons abordé des notions commerciales et financières, comme le financement et la stratégie de distribution. Ce travail nous a aussi appris à collaborer efficacement, à écouter les idées des autres et à prendre des décisions en groupe. Enfin, cette SAE nous a permis de mieux comprendre les différentes étapes de création d’un projet, de l’idée initiale jusqu’à sa présentation finale.
-        </p>
+Nous avons bien répartit le travail, que ce soit  je me suis surtout occupé de la partie création de l'idée et toute la présentation de l'application. 
+</p>
 
 
 
@@ -609,6 +687,7 @@ Ce projet nous a permis de développer de nombreuses compétences en gestion de 
             et l’utilisation d’outils collaboratifs comme Google Drive et GitHub. 
             Une attention particulière a été portée à l’expression orale pour réaliser une 
             voix-off claire et engageante.
+            J'ai surtout travaillé sur le storyboard, la rédaction du scénario et la partie montage vidéo.
         </p>
 
         <h4>Compétences développées</h4>
@@ -646,13 +725,66 @@ Ce projet nous a permis de développer de nombreuses compétences en gestion de 
 
 </section>
 
+  
         <br><br>
+
+<section id="AnalyseReflexive">
+    <br>
+    <h2>Analyse réflexive</h2>
+
+    <p>
+        Cette section propose une prise de recul globale sur l’ensemble des projets réalisés
+        au cours de mon BUT Informatique. Elle permet de mettre en évidence les apprentissages
+        transversaux, les difficultés rencontrées, ainsi que l’évolution de mes compétences
+        au fil des expériences.
+    </p>
+
+    <h3>Ce que ces projets m’ont appris</h3>
+    <p>
+        L’ensemble des projets réalisés m’a permis de comprendre concrètement les différentes étapes
+        du cycle de développement logiciel : analyse du besoin, conception, implémentation,
+        tests et documentation. J’ai également appris à mieux structurer mon code, à travailler
+        en équipe sur des projets complexes et à m’adapter à des environnements techniques variés
+        (web, systèmes, jeux vidéo, bases de données).
+    </p>
+
+    <h3>Difficultés rencontrées et solutions apportées</h3>
+    <p>
+        Plusieurs difficultés sont revenues de manière récurrente, notamment la gestion du temps,
+        la coordination en équipe et la résolution de problèmes techniques complexes (synchronisation,
+        algorithmes, déploiement ou architecture logicielle).
+        Pour y remédier, j’ai appris à mieux organiser mon travail en le découpant en tâches,
+        à utiliser des outils de gestion de projet (Git, Trello, issues GitLab), et à communiquer
+        plus efficacement avec mon équipe afin d’anticiper les blocages.
+    </p>
+
+    <h3>Compétences développées ou renforcées</h3>
+    <p>
+        Ces expériences ont renforcé mes compétences en développement logiciel (Java, JavaScript,
+        SQL, APIs REST), en administration système (Linux, déploiement, virtualisation),
+        ainsi qu’en gestion de projet. J’ai également développé des compétences transversales
+        essentielles comme la rigueur, l’autonomie, la capacité d’adaptation et la communication
+        technique.
+    </p>
+
+    <h3>Ce que je ferais différemment aujourd’hui</h3>
+    <p>
+        Avec le recul, je mettrais davantage l’accent sur la phase de conception avant de commencer
+        à coder, afin de limiter les refontes en cours de projet. J’essaierais également de mieux
+        anticiper la répartition des tâches et les délais, notamment dans les projets de groupe.
+        Enfin, je renforcerais la qualité de la documentation et des tests dès le début du développement,
+        afin de gagner en fiabilité et en maintenabilité.
+    </p>
+</section>
+      <br><br>
         <section id="contact">
                         <br>
             <h2>Contact</h2>
                         <br>
             <div class="contact-info">
                 <h3>Email : emile.camard@gmail.com</h3>
+                <h3>LinkedIn : <a href="https://www.linkedin.com/in/emile-camard/" target="_blank">linkedin.com/in/emile-camard</a></h3>
+                <h3>GitHub : <a href="https://github.com/EmileCamard" target="_blank">github.com/EmileCamard</a></h3>
             </div>
                         <div class="contact-form">
                 <h3>Envoyer un message :</h3>
@@ -661,11 +793,11 @@ Ce projet nous a permis de développer de nombreuses compétences en gestion de 
   method="POST"
 >
   <label>
-    Your email:
+    Votre email:
     <input type="email" name="email">
   </label>
   <label>
-    Your message:
+    Votre message:
     <textarea name="message"></textarea>
   </label>
   <!-- your other form fields go here -->
