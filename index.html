@@ -5,811 +5,1043 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>CV Numérique - Emile Camard</title>
     <link rel="stylesheet" href="styles.css" />
-    
 </head>
+<script src="Main.js"></script>
 <script>
 function toggleProject(project) {
     let details = project.querySelector(".project-details");
     if (details.style.maxHeight) {
-        details.style.maxHeight = null;   // ferme
+        details.style.maxHeight = null;
     } else {
-        details.style.maxHeight = details.scrollHeight + "px"; // ouvre
+        details.style.maxHeight = details.scrollHeight + "px";
     }
 }
 </script>
 
 <body>
 
-
 <nav>
     <ul>
         <li><a href="#Accueil">Accueil</a></li>
         <li><a href="#Parcours">Parcours</a></li>
         <li><a href="#Experience">Expérience</a></li>
-                <li><a href="#Competences">Compétences</a></li>
+        <li><a href="#Competences">Compétences</a></li>
         <li><a href="#Projet">Projets</a></li>
+        <li><a href="#AnalyseReflexive">Analyse réflexive</a></li>
         <li><a href="#contact">Contact</a></li>
     </ul>
 </nav>
+
 <header>
     <section id="Accueil" class="hero">
         <div class="hero-content">
 
+            <!-- TEXTE -->
+            <div class="hero-text">
 
-        <!-- TEXTE -->
-        <div class="hero-text">
+                <p class="hero-tag">
+                    Portfolio • BUT Informatique • Université de Lille
+                </p>
 
-            <p class="hero-tag">
-                Portfolio • BUT Informatique • Université de Lille
-            </p>
+                <h1 class="hero-name">Emile CAMARD</h1>
 
-            <h1 class="hero-name">Emile CAMARD</h1>
+                <h2 class="hero-title">
+                    Développement logiciel • Web • Systèmes Linux
+                </h2>
 
-            <h2 class="hero-title">
-                Développement logiciel • Web • Systèmes Linux
-            </h2>
+                <p class="hero-subtitle">
+                    Étudiant en 2ᵉ année de BUT Informatique, actuellement en stage chez
+                    <strong>EKEEP IT</strong>, passionné par le développement logiciel,
+                    les architectures web et la conception de projets techniques.
+                </p>
 
-            <p class="hero-subtitle">
-                Étudiant en 2ᵉ année de BUT Informatique, actuellement en stage chez
-                <strong>EKEEP IT</strong>, passionné par le développement logiciel,
-                les architectures web et la conception de projets techniques.
-            </p>
+                <p class="hero-description">
+                    Au fil de mon parcours universitaire et de mes projets personnels,
+                    j'ai développé des compétences en développement Java, SQL,
+                    JavaScript et en gestion de projet agile.
 
-            <p class="hero-description">
-                Au fil de mon parcours universitaire et de mes projets personnels,
-                j’ai développé des compétences en développement Java, SQL,
-                JavaScript,gestion de projet agile.
+                    J'apprécie particulièrement les projets mêlant réflexion,
+                    algorithmique et créativité, notamment à travers le développement
+                    de jeux vidéo sur Unity et la création d'applications interactives.
 
-                J’apprécie particulièrement les projets mêlant réflexion,
-                algorithmique et créativité, notamment à travers le développement
-                de jeux vidéo sur Unity et la création d’applications interactives.
+                    Curieux, autonome et motivé, je souhaite poursuivre mon évolution
+                    dans le domaine du développement logiciel et des technologies web,
+                    avec l'objectif de continuer à progresser au sein de projets
+                    techniques concrets et collaboratifs.
+                </p>
 
-                Curieux, autonome et motivé, je souhaite poursuivre mon évolution
-                dans le domaine du développement logiciel et des technologies web,
-                avec l’objectif de continuer à progresser au sein de projets
-                techniques concrets et collaboratifs.
-            </p>
+                <!-- OBJECTIFS -->
+                <div class="hero-goals">
+                    <div class="goal-card">
+                        <span>🎯</span>
+                        <p class="hero-description">
+                            Recherche d'opportunités en développement logiciel
+                        </p>
+                    </div>
 
-            <!-- OBJECTIFS -->
-            <div class="hero-goals">
-                <div class="goal-card">
-                    <span>🎯</span>
-                    <p class="hero-description">
-                        Recherche d’opportunités en développement logiciel
-                    </p>
+                    <div class="goal-card">
+                        <span>🚀</span>
+                        <p class="hero-description">
+                            Objectif : poursuivre en développement full-stack
+                        </p>
+                    </div>
                 </div>
 
-
-                <div class="goal-card">
-                    <span>🚀</span>
-                    <p class="hero-description">
-                        Objectif : poursuivre en développement full-stack
-                    </p>
+                <!-- BOUTONS -->
+                <div class="hero-buttons">
+                    <a href="#Projet" class="btn-primary">
+                        Voir mes projets
+                    </a>
+                    <a href="#contact" class="btn-secondary">
+                        Me contacter
+                    </a>
                 </div>
+
             </div>
 
-            <!-- BOUTONS -->
-            <div class="hero-buttons">
-                <a href="#Projet" class="btn-primary">
-                    Voir mes projets
-                </a>
-
-                <a href="#contact" class="btn-secondary">
-                    Me contacter
-                </a>
+            <!-- PHOTO -->
+            <div class="hero-photo">
+                <img
+                    src="IMG/CAMARD portraits iut info-356(1).jpg"
+                    alt="Photo Emile Camard"
+                >
             </div>
 
         </div>
-
-        <!-- PHOTO -->
-        <div class="hero-photo">
-            <img
-                src="IMG/CAMARD portraits iut info-356(1).jpg"
-                alt="Photo Emile Camard"
-            >
-        </div>
-
-    </div>
-</section>
-
+    </section>
 </header>
 
-</header>
+<main>
 
+    <br><br>
+    <section id="Parcours">
+        <br>
+        <h2>Parcours</h2>
 
-    <main>
+        <h3>BUT Informatique — Université de Lille (2023–2026)</h3>
+        <p>
+            Formation centrée sur le développement logiciel, l'algorithmique, la programmation
+            orientée objet, l'administration systèmes et réseaux, la gestion de bases de données
+            et la conduite de projet.
+        </p>
+        <p>
+            Réalisation de nombreux projets pratiques détaillés dans les sections ci-dessous
+            (développement web, applications Java, bases de données, modélisation, robotique, et plus).
+        </p>
 
-        <br><br>
-<section id="Parcours">
-    <br>
-    <h2>Parcours</h2>
+        <h3>Lycée La Salle Lille</h3>
+        <p>
+            Baccalauréat Général — Mention Bien<br>
+            Spécialités : Mathématiques &amp; Numérique et Sciences Informatiques (NSI)
+        </p>
+    </section>
 
-    <h3>BUT Informatique — Université de Lille (2023–2026)</h3>
-    <p>
-        Formation centrée sur le développement logiciel, l’algorithmique, la programmation orientée objet, 
-        l’administration systèmes et réseaux, la gestion de bases de données et la conduite de projet.
-    </p>
-    <p>
-        Réalisation de nombreux projets pratiques détaillés dans les sections ci-dessous 
-        (développement web, applications Java, bases de données, modélisation, robotique, et plus).
-    </p>
+    <br><br>
 
-    <h3>Lycée La Salle Lille</h3>
-    <p>
-        Baccalauréat Général — Mention Bien  
-        <br>Spécialités : Mathématiques & Numérique et Sciences Informatiques (NSI)
-    </p>
-</section>
+    <section id="Experience">
+        <br>
+        <h2>Expérience</h2>
 
-<br><br>
+        <h3>Stage de 2ᵉ année BUT Informatique — EKEEP IT (Mai 2026 – Juillet 2026)</h3>
+        <p>
+            Actuellement en stage chez <strong>EKEEP IT</strong>, je participe au développement
+            d'applications web dans un environnement professionnel utilisant une méthodologie agile.
+            Ce stage me permet de découvrir concrètement le fonctionnement d'une équipe de
+            développement ainsi que les différentes étapes d'un projet logiciel en entreprise.
+        </p>
 
-<section id="Experience">
-    <br>
-    <h2>Expérience</h2>
+        <h3>Stage de seconde — 3Axes Institut (2022)</h3>
+        <p>
+            Découverte des métiers de l'informatique et du jeu vidéo.
+            Initiation aux outils de création numérique (Photoshop, Blender) et observation
+            des workflows de production graphique et 3D.
+        </p>
 
+        <h3>Stage de 3ème — Institut d'Éducation Motrice Jules Ferry (2021)</h3>
+        <p>
+            Participation à l'accompagnement d'enfants en situation de handicap moteur avec
+            troubles neuro-développementaux. Observation de séances de rééducation
+            (orthophonie, ergothérapie, kinésithérapie, équithérapie).
+            Découverte d'un environnement pluridisciplinaire centré sur l'accompagnement humain.
+        </p>
+    </section>
 
-   <h3>Stage de 2ᵉ année BUT Informatique — EKEEP IT (Mai 2026 – Juillet 2026)</h3> <p> Actuellement en stage chez <strong>EKEEP IT</strong>, je participe au développement d’applications web dans un environnement professionnel utilisant une méthodologie agile. Ce stage est toujours en cours et me permet de découvrir concrètement le fonctionnement d’une équipe de développement ainsi que les différentes étapes d’un projet logiciel en entreprise. </p>
-    
-   <h3>Stage de seconde — 3Axes Institut (2022)</h3>
-    <p>
-        Découverte des métiers de l’informatique et du jeu vidéo.  
-        Initiation aux outils de création numérique (Photoshop, Blender) et observation des workflows
-        de production graphique et 3D.
-    </p>
+    <br><br>
+    <section id="Competences">
+        <br>
+        <h2>Compétences</h2>
+        <br>
+        <h3>Développement</h3>
+        <ul>
+            <li>Java (POO, JavaFX, fichiers CSV)</li>
+            <li>HTML / CSS</li>
+            <li>SQL (requêtes et modélisation)</li>
+            <li>Bases de l'algorithmique (optimisation, graphes…)</li>
+            <li>JavaScript (TypeScript, React, Node.js)</li>
+            <li>Unity (C#)</li>
+            <li>API REST</li>
+        </ul>
 
-    <h3>Stage de 3ème — Institut d’Éducation Motrice Jules Ferry (2021)</h3>
-    <p>
-        Participation à l’accompagnement d’enfants en situation de handicap moteur avec troubles 
-        neuro-développementaux. Observation de séances de rééducation 
-        (orthophonie, ergothérapie, kinésithérapie, équithérapie).  
-        Découverte d’un environnement pluridisciplinaire centré sur l’accompagnement humain.
-    </p>
-</section>
+        <h3>Systèmes &amp; Outils</h3>
+        <ul>
+            <li>Linux / Debian — Administration système, VM</li>
+            <li>VirtualBox</li>
+            <li>Terminal &amp; Shell scripting</li>
+            <li>Docker</li>
+        </ul>
 
-        <br><br>
-        <section id="Competences">
-                        <br>
-            <h2>Compétences</h2>
-                        <br>
-            <h3>Développement</h3>
-            <ul>
-                <li>Java (POO, JavaFX, fichiers CSV)</li>
-                <li>HTML / CSS</li>
-                <li>SQL (requêtes et modélisation)</li>
-                <li>Bases de l’algorithmique (optimisation, graphes…)</li>
-                <li>JavaScript (TypeScript, React, Node.js)</li>
-                <li>Unity (C#)</li>
-                <li>API REST</li>
-            </ul>
+        <h3>Gestion de projet &amp; Communication</h3>
+        <ul>
+            <li>Git / GitHub / GitLab</li>
+            <li>Travail en équipe</li>
+            <li>Rédaction technique</li>
+            <li>Organisation et suivi de projet</li>
+            <li>Méthode agile (Scrum)</li>
+        </ul>
+    </section>
 
-            <h3>Systèmes & Outils</h3>
-            <ul>
-                <li>Linux / Debian — Administration système, VM</li>
-                <li>VirtualBox</li>
-                <li>Terminal & Shell scripting</li>
-                <li> Docker</li>
+    <br><br>
+    <section id="Projet">
+        <br>
+        <h2>Mes projets</h2>
+        <br>
 
-            </ul>
-
-            <h3>Gestion de projet & Communication</h3>
-            <ul>
-                <li>Git / GitHub / GitLab</li>
-                <li>Travail en équipe</li>
-                <li>Rédaction technique</li>
-                <li>Organisation et suivi de projet</li>
-                <li>Utilisation méthode agile (scrum)</li>
-            </ul>
-        </section>
-        <br><br>
-       <section id="Projet">
-    <br>
-
-    <h2>Mes projets</h2>
-    <br>
         <!-- NAVIGATION DES SEMESTRES -->
-<div class="semester-nav">
-    <a href="#sem4">Semestre 4</a>
-    <a href="#sem3">Semestre 3</a>
-    <a href="#sem2">Semestre 2</a>
-</div>
+        <div class="semester-nav">
+            <a href="#sem4">Semestre 4</a>
+            <a href="#sem3">Semestre 3</a>
+            <a href="#sem2">Semestre 2</a>
+            <a href="#sem1">Semestre 1</a>
+        </div>
 
+        <!-- ======================== SEMESTRE 4 ======================== -->
+        <h3 class="semester-title" id="sem4">Semestre 4</h3>
 
-<h3 class="semester-title" id="sem4">Semestre 4</h3>
-    <!-- ---------------------- SEMESTRE 4 ---------------------- -->
-<div class="project-item" onclick="toggleProject(this)">
-    <div class="project-summary">
-        <h3>SAÉ S4.A02.1 — API REST </h3>
-        <p>Conception et développement d’une API REST complète en Java EE pour la gestion de collecte de déchets.</p>
-    </div>
+        <!-- SAÉ S4 — API REST -->
+        <div class="project-item" onclick="toggleProject(this)">
+            <div class="project-summary">
+                <h3>SAÉ S4.A02.1 — API REST (EcoDrop)</h3>
+                <p>Conception et développement d'une API REST complète en Java EE pour la gestion de collecte de déchets.</p>
+            </div>
 
-    <div class="project-details">
-        <img src="IMG/Bruno.png" alt="Illustration du projet">
+            <div class="project-details">
+                <img src="IMG/Bruno.png" alt="Illustration du projet EcoDrop">
 
-        <h4>Résumé du projet</h4>
-        <p>
-Le projet EcoDrop consistait à concevoir et développer une API REST complète en Java EE permettant de gérer
-un système de collecte de déchets spécifiques (batteries, textiles, électronique).
-L’application permet de gérer un catalogue de types de déchets, des points de collecte,
-ainsi que les dépôts réalisés par les utilisateurs.
+                <h4>Contexte du projet</h4>
+                <p>
+                    Projet réalisé en <strong>groupe de 3 étudiants</strong> dans le cadre du Semestre 4
+                    du BUT Informatique. L'objectif était de concevoir une API REST complète en Java EE
+                    permettant de gérer un système de collecte de déchets spécifiques (batteries,
+                    textiles, électronique).
+                </p>
 
-Nous avons mis en place une architecture REST respectant les standards HTTP, avec gestion fine des codes de retour,
-support des formats JSON et XML, et intégration d’une logique métier complète (gestion du remplissage des points,
-leaderboard des utilisateurs, validation des dépôts, etc.).
+                <h4>Objectifs</h4>
+                <p>
+                    Développer un backend fonctionnel permettant de gérer un catalogue de types de
+                    déchets, des points de collecte et les dépôts réalisés par les utilisateurs.
+                    L'API devait respecter les standards HTTP, supporter les formats JSON et XML,
+                    et intégrer une logique métier complète (remplissage des points, leaderboard,
+                    validation des dépôts).
+                </p>
 
-Le projet inclut également un système de sécurisation par token avec gestion des rôles (USER / ADMIN),
-ainsi qu’une organisation rigoureuse du code avec DAO, DTO et séparation des couches.
-Des tests automatisés ont été réalisés via Bruno, et un outil d’import CSV a été développé pour alimenter la base de données.
-Ce projet nous a permis de maîtriser la conception d’API robustes et sécurisées.
-Nous nous sommes bien répartit la tache, effectuant chacun d'une table différente. Je me suis aussi occupé de rélaisé la documentation de l'API en Markdown.
+                <h4>Mon rôle</h4>
+                <p>
+                    J'ai pris en charge le développement d'une des tables principales de la base de
+                    données avec ses endpoints associés (CRUD complet, gestion des codes HTTP, filtres).
+                    J'ai également rédigé l'intégralité de la <strong>documentation technique de l'API
+                    en Markdown</strong> (description des routes, paramètres, codes de retour, exemples),
+                    et développé l'<strong>outil d'import CSV</strong> permettant d'alimenter la base
+                    de données à partir de fichiers plats.
+                </p>
 
-</p>
+                <h4>Résultats obtenus</h4>
+                <ul>
+                    <li>API fonctionnelle avec authentification par token et gestion des rôles USER / ADMIN</li>
+                    <li>Couverture complète des endpoints via des tests automatisés avec Bruno</li>
+                    <li>Documentation Markdown claire et structurée, réutilisable par d'autres développeurs</li>
+                    <li>Outil d'import CSV opérationnel, testé sur des jeux de données réels</li>
+                </ul>
 
-        <h4>Compétences techniques développées</h4>
-        <ul>
-            <li>Développement d’API REST en Java EE</li>
-            <li>Gestion des requêtes HTTP (GET, POST, PUT, PATCH, DELETE) et des codes de retour</li>
-            <li>Conception de bases de données relationnelles et requêtes SQL</li>
-            <li>Architecture logicielle (DAO, DTO, séparation des couches)</li>
-            <li>Sérialisation multi-format (JSON / XML)</li>
-            <li>Sécurisation par token et gestion des rôles utilisateurs</li>
-            <li>Implémentation de logique métier (leaderboard, taux de remplissage, validation)</li>
-            <li>Tests d’API avec Bruno et scénarios automatisés</li>
-            <li>Import de données via fichiers CSV en Java</li>
-        </ul>
+                <h4>Compétences techniques développées</h4>
+                <ul>
+                    <li>Développement d'API REST en Java EE (JAX-RS)</li>
+                    <li>Gestion des requêtes HTTP (GET, POST, PUT, PATCH, DELETE) et des codes de retour</li>
+                    <li>Conception de bases de données relationnelles et requêtes SQL (PostgreSQL)</li>
+                    <li>Architecture logicielle en couches (DAO, DTO)</li>
+                    <li>Sérialisation multi-format (JSON / XML)</li>
+                    <li>Sécurisation par token et gestion des rôles utilisateurs</li>
+                    <li>Tests d'API avec Bruno et scénarios automatisés</li>
+                    <li>Import de données via fichiers CSV en Java</li>
+                </ul>
 
-        <h4>Savoir-être et compétences transversales</h4>
-        <ul>
-            <li>Travail en équipe sur un projet structuré</li>
-            <li>Organisation et découpage en fonctionnalités</li>
-            <li>Rigueur dans la conception et le respect des standards REST</li>
-            <li>Analyse et résolution de problèmes techniques complexes</li>
-            <li>Rédaction de documentation technique claire (Markdown)</li>
-        </ul>
+                <h4>Compétences transversales (soft skills)</h4>
+                <ul>
+                    <li><strong>Travail en équipe :</strong> Nous nous sommes réparti le travail par table de base de données, ce qui nous a permis d'avancer en parallèle sans conflit. Une revue de code collective en fin de sprint a permis d'harmoniser les pratiques.</li>
+                    <li><strong>Rigueur et respect des standards :</strong> J'ai veillé à ce que chaque endpoint respecte les conventions REST (codes HTTP appropriés, nommage des routes), en m'appuyant sur la documentation officielle JAX-RS.</li>
+                    <li><strong>Gestion du temps :</strong> Nous avons sous-estimé la complexité de la gestion de la sécurité et nous avons dû réorganiser les priorités en cours de projet pour respecter la deadline. Cela m'a appris à mieux anticiper les tâches à risque.</li>
+                    <li><strong>Rédaction technique :</strong> La rédaction de la documentation m'a obligé à adopter un point de vue « utilisateur de l'API », ce qui a amélioré la qualité globale du travail.</li>
+                </ul>
 
-        <h4>Outils et méthodes</h4>
-        <ul>
-            <li>Java EE (JAX-RS)</li>
-            <li>PostgreSQL / SQL</li>
-            <li>Bruno (tests d’API)</li>
-            <li>Git / GitHub pour le versioning</li>
-            <li>Markdown pour la documentation</li>
-            <li>CSV pour l’import de données</li>
-        </ul>
-        <h4>Difficultés rencontrées</h4>
-        <ul>
-            <li>Nous avons eu du mal avec la gestion de la sécurité.</li>
-            <li>Nous avons eu un problème avec la gestion du temps, nous pensions que la deadline était plus éloignée.</li>
-        </ul>
+                <h4>Difficultés rencontrées</h4>
+                <ul>
+                    <li>La gestion de la sécurité (tokens, rôles) s'est révélée plus complexe que prévu et a nécessité plusieurs refactorisations.</li>
+                    <li>La deadline a été sous-estimée, ce qui a créé une pression en fin de projet.</li>
+                </ul>
 
-        <h4>Améliorations possibles</h4>
-        <ul>
-            <li>Mettre en place plus de test bruno pour couvrir les scénarios d'erreur</li>
-            <li>Améliorer la documentation de l'API</li>
-            <li> Mieux gérer notre temps</li>
-        </ul>
+                <h4>Améliorations possibles</h4>
+                <ul>
+                    <li>Mettre en place davantage de tests Bruno couvrant les scénarios d'erreur</li>
+                    <li>Mieux planifier les tâches à risque dès le début du projet</li>
+                </ul>
 
+                <a href="https://github.com/EmileCamard/SAE-API-REST" target="_blank">
+                    <strong>Code source disponible sur GitHub</strong>
+                </a>
+            </div>
+        </div>
 
-        <a href="https://github.com/EmileCamard/SAE-API-REST" target="_blank">
-            <strong>Code source disponible sur GitHub</strong>
-        </a>
-    </div>
-</div>
-<div class="project-item" onclick="toggleProject(this)">
-    <div class="project-summary">
-        <h3>SAÉ S4 — Jeu multijoueur (Shoot Them Up)</h3>
-        <p>Développement d’un jeu en ligne multijoueur en JavaScript avec architecture client-serveur en WebSocket.</p>
-    </div>
+        <!-- SAÉ S4 — Jeu multijoueur -->
+        <div class="project-item" onclick="toggleProject(this)">
+            <div class="project-summary">
+                <h3>SAÉ S4 — Jeu multijoueur (Shoot Them Up)</h3>
+                <p>Développement d'un jeu en ligne multijoueur en JavaScript avec architecture client-serveur en WebSocket.</p>
+            </div>
 
-    <div class="project-details">
-        <img src="IMG/saeJs.png" alt="Illustration du projet">
+            <div class="project-details">
+                <img src="IMG/saeJs.png" alt="Illustration du jeu multijoueur">
 
-        <h4>Résumé du projet</h4>
-        <p>
-Ce projet consistait à concevoir et développer un jeu en ligne multijoueur de type "shoot them up".
-Le jeu repose sur une architecture client-serveur utilisant Node.js et Socket.io, permettant la communication en temps réel entre les joueurs.
+                <h4>Contexte du projet</h4>
+                <p>
+                    Projet réalisé en <strong>groupe de 4 étudiants</strong> dans le cadre du Semestre 4.
+                    L'objectif était de concevoir et développer un jeu en ligne multijoueur de type
+                    "shoot them up" reposant sur une architecture client-serveur Node.js / Socket.io.
+                </p>
 
-Le joueur contrôle un avatar sur un plateau 2D, doit éviter des ennemis, tirer pour les détruire et récupérer des bonus pour améliorer ses capacités.
-Le jeu propose plusieurs fonctionnalités : système de score, tableau des meilleurs joueurs, écran de fin avec statistiques, ainsi qu’un mode multijoueur coopératif.
+                <h4>Objectifs</h4>
+                <p>
+                    Créer un jeu jouable en temps réel avec gestion des collisions, des ennemis, des bonus,
+                    un tableau des scores et un mode coopératif. Le jeu devait fonctionner de façon
+                    fluide pour plusieurs joueurs simultanés.
+                </p>
 
-Nous avons également implémenté des mécaniques avancées comme l’apparition progressive d’ennemis, un boss avec intelligence artificielle,
-et une gestion complète des collisions (joueurs, ennemis, projectiles, bonus).
-Tous les assets graphiques ont été réalisés par l’équipe, renforçant l’identité visuelle du jeu.
-J'ai surtout travaillé sur la partie front-end (client) que ce soit avec la mise en place de la SPA/router ou alors avec la conception des sprites et leur affichage dynamique sur le canvas.
-        </p>
+                <h4>Mon rôle</h4>
+                <p>
+                    J'ai travaillé principalement sur la <strong>partie front-end (client)</strong> :
+                    mise en place de la SPA et du système de routage côté client, conception des
+                    <strong>sprites</strong> du jeu (personnages, ennemis, décors) et implémentation
+                    de leur <strong>affichage dynamique sur le canvas HTML5</strong>. J'ai également
+                    contribué à la logique d'animation et au rendu graphique général.
+                </p>
 
-        <h4>Compétences techniques développées</h4>
-        <ul>
-            <li>Développement JavaScript (front-end et back-end)</li>
-            <li>Programmation temps réel avec WebSocket (Socket.io)</li>
-            <li>Manipulation de canvas pour le rendu graphique 2D</li>
-            <li>Architecture client-serveur et synchronisation multijoueur</li>
-            <li>Gestion des collisions (hitbox) et des interactions</li>
-            <li>Implémentation d’intelligence artificielle (ennemis, boss)</li>
-            <li>Gestion des événements et des états du jeu</li>
-            <li>Tests unitaires et validation des fonctionnalités</li>
-        </ul>
+                <h4>Résultats obtenus</h4>
+                <ul>
+                    <li>Jeu fonctionnel en multijoueur temps réel avec synchronisation des positions</li>
+                    <li>Système de score, tableau des meilleurs joueurs et écran de fin avec statistiques</li>
+                    <li>Boss avec intelligence artificielle et apparition progressive des ennemis</li>
+                    <li>Assets graphiques originaux réalisés intégralement par l'équipe</li>
+                </ul>
 
-        <h4>Savoir-être et compétences transversales</h4>
-        <ul>
-            <li>Travail en équipe et coordination sur un projet complexe</li>
-            <li>Organisation via découpage en tâches (issues, milestones)</li>
-            <li>Capacité d’adaptation face aux difficultés techniques</li>
-            <li>Résolution de problèmes (synchronisation, collisions, gameplay)</li>
-            <li>Créativité dans la conception du gameplay et du design</li>
-        </ul>
+                <h4>Compétences techniques développées</h4>
+                <ul>
+                    <li>Développement JavaScript front-end et back-end</li>
+                    <li>Programmation temps réel avec WebSocket (Socket.io)</li>
+                    <li>Manipulation du Canvas API pour le rendu graphique 2D</li>
+                    <li>Architecture client-serveur et synchronisation multijoueur</li>
+                    <li>Gestion des collisions (hitbox) et des interactions</li>
+                    <li>Implémentation d'intelligence artificielle (ennemis, boss)</li>
+                    <li>Routing SPA côté client</li>
+                </ul>
 
-        <h4>Outils et méthodes</h4>
-        <ul>
-            <li>JavaScript (Canvas API)</li>
-            <li>Node.js et Socket.io</li>
-            <li>Git / GitLab pour le versioning</li>
-            <li>Organisation agile (issues, kanban)</li>
-            <li>Tests unitaires</li>
-        </ul>
+                <h4>Compétences transversales (soft skills)</h4>
+                <ul>
+                    <li><strong>Résolution de problèmes :</strong> La synchronisation des joueurs en temps réel était le défi principal. En analysant les désynchronisations d'états entre clients, j'ai contribué à mettre en place une réconciliation d'état côté serveur qui a stabilisé le jeu.</li>
+                    <li><strong>Créativité :</strong> Tous les assets graphiques étant réalisés par l'équipe, j'ai dû concevoir des sprites cohérents avec l'univers du jeu tout en restant efficace en termes de pixels affichés sur canvas.</li>
+                    <li><strong>Adaptabilité :</strong> Face aux difficultés de synchronisation multijoueur, l'équipe a dû refactoriser une partie de la logique de rendu en cours de développement.</li>
+                    <li><strong>Organisation :</strong> Utilisation d'un système d'issues et d'un kanban GitLab pour coordonner les développements en parallèle.</li>
+                </ul>
 
-        <h4>Difficultés rencontrées</h4>
-        <ul>
-            <li>Synchronisation des joueurs en temps réel via WebSocket</li>
-            <li>Gestion des hitbox et des collisions fiables</li>
-            <li>Équilibrage de la difficulté des ennemis et du gameplay</li>
-            <li>Refactorisation du code pour améliorer sa structure</li>
-        </ul>
+                <h4>Difficultés rencontrées</h4>
+                <ul>
+                    <li>Synchronisation fiable des états entre plusieurs clients en temps réel</li>
+                    <li>Détection des collisions et équilibrage de la difficulté du gameplay</li>
+                    <li>Refactorisation du code pour améliorer la maintenabilité</li>
+                </ul>
 
-        <h4>Améliorations possibles</h4>
-        <ul>
-            <li>Ajout de nouveaux ennemis et boss</li>
-            <li>Amélioration de l’intelligence artificielle</li>
-            <li>Ajout de sons et musiques immersives</li>
-            <li>Développement d’une version mobile</li>
-        </ul>
- <a href="https://github.com/EmileCamard/SAE-js-game.git" target="_blank"><strong>Code source disponible sur GitHub</strong></a>
-    </div>
+                <h4>Améliorations possibles</h4>
+                <ul>
+                    <li>Ajout de sons et de musiques immersives</li>
+                    <li>Amélioration de l'intelligence artificielle des ennemis</li>
+                    <li>Développement d'une version mobile</li>
+                </ul>
 
-</div>
-    <!-- ---------------------- SEMESTRE 3 ---------------------- -->
-<h3 class="semester-title" id="sem3">Semestre 3</h3>
-<div class="project-item" onclick="toggleProject(this)">
-    <div class="project-summary">
-        <h3>SAÉ 3.02 — Labyrinthes</h3>
-        <p>Développement d’un jeu de labyrinthe en Java avec modes libre et progression.</p>
-    </div>
+                <a href="https://github.com/EmileCamard/SAE-js-game.git" target="_blank">
+                    <strong>Code source disponible sur GitHub</strong>
+                </a>
+            </div>
+        </div>
 
-    <div class="project-details">
-                <img src="IMG/Laby.png" alt="Illustration du projet">        
-        <h4>Résumé du projet</h4>
-<p>
-Le projet consistait à développer un jeu de labyrinthe en Java, destiné à proposer deux modes de jeu : 
-le Mode Libre, où le joueur choisit la taille du labyrinthe et le pourcentage de murs, 
-et le Mode Progression, avec des étapes de difficulté croissante et des défis spécifiques. 
-Nous avons implémenté des labyrinthes aléatoires et parfaits en utilisant des structures de données optimisées 
-et des algorithmes tels que DFS et BFS pour garantir l’accessibilité et la distance minimale entre l’entrée et la sortie. 
-L’interface a été réalisée en JavaFX, avec gestion des déplacements au clavier, affichage dynamique 
-et intégration d’une boutique où le joueur peut acheter des bonus. 
-Pour enrichir l’expérience, nous avons également ajouté un thème Bob l’Éponge et des éléments graphiques interactifs. 
-Ce projet nous a permis de combiner des compétences en algorithmique, structures de données, programmation orientée objet, développement d’interface graphique
-et gestion de projet en équipe.
-Lors de ce projet, j'ai surtout travaillé sur la partie documentation, l'algorithme de génération du mode libre et la mise en place de la boutique.
-</p>
+        <!-- ======================== SEMESTRE 3 ======================== -->
+        <h3 class="semester-title" id="sem3">Semestre 3</h3>
 
-        <h4>Compétences techniques développées</h4>
-        <ul>
-            <li>Programmation en Java orientée objet et JavaFX</li>
-            <li>Conception et implémentation d’algorithmes (génération et parcours de labyrinthe)</li>
-            <li>Structuration de données (grilles, cellules, cartes)</li>
-            <li>Gestion de projet en équipe avec Git et GitLab</li>
-            <li>Tests unitaires et validation fonctionnelle des fonctionnalités</li>
-            <li>Création et lecture de fichiers CSV pour le suivi des joueurs</li>
-        </ul>
+        <!-- SAÉ 3.02 — Labyrinthes -->
+        <div class="project-item" onclick="toggleProject(this)">
+            <div class="project-summary">
+                <h3>SAÉ 3.02 — Labyrinthes</h3>
+                <p>Développement d'un jeu de labyrinthe en Java avec modes libre et progression.</p>
+            </div>
 
-        <h4>Savoir-être et compétences transversales</h4>
-        <ul>
-            <li>Travail collaboratif et coordination d’équipe</li>
-            <li>Organisation et planification des tâches</li>
-            <li>Communication efficace entre membres et suivi du projet</li>
-            <li>Résolution de problèmes et adaptation face aux difficultés techniques</li>
-        </ul>
+            <div class="project-details">
+                <img src="IMG/Laby.png" alt="Illustration du projet Labyrinthe">
 
-        <h4>Outils et méthodes</h4>
-        <ul>
-            <li>Java, IntelliJ IDEA / Visual Studio Code</li>
-            <li>JavaFX pour l’interface graphique</li>
-            <li>Git / GitLab pour le versioning</li>
-            <li>Google Docs, Figma, Canva pour la collaboration et les maquettes</li>
-        </ul>
+                <h4>Contexte du projet</h4>
+                <p>
+                    Projet réalisé en <strong>groupe de 4 étudiants</strong> dans le cadre du Semestre 3.
+                    Il consistait à développer un jeu de labyrinthe en Java proposant deux modes :
+                    le <em>Mode Libre</em> (taille et densité de murs configurables) et le
+                    <em>Mode Progression</em> (difficulté croissante avec défis spécifiques).
+                </p>
 
-        <a href="https://github.com/EmileCamard/SAE-labyrinthe/tree/main" target="_blank">
-            <strong>Code source disponible sur GitHub</strong>
-        </a>
-    </div>
-</div>
- <div class="project-item" onclick="toggleProject(this)">
-    <div class="project-summary">
-        <h3>SAÉ 3.03 — Déploiement d’application (Matrix)</h3>
-        <p>Mise en place d’une infrastructure complète de communication basée sur le protocole Matrix.</p>
-    </div>
+                <h4>Objectifs</h4>
+                <p>
+                    Implémenter des labyrinthes aléatoires et parfaits grâce à des algorithmes
+                    (DFS, BFS), garantir l'accessibilité des cases et développer une interface
+                    graphique JavaFX complète avec boutique de bonus.
+                </p>
 
-    <div class="project-details">
-        <img src="IMG/Element-logo.png" alt="Illustration du projet">
+                <h4>Mon rôle</h4>
+                <p>
+                    J'ai eu trois responsabilités principales : la rédaction de la
+                    <strong>documentation technique</strong> du projet, le développement de l'
+                    <strong>algorithme de génération aléatoire du Mode Libre</strong> (génération
+                    d'un labyrinthe jouable avec pourcentage de murs paramétrable), et la
+                    mise en place de la <strong>boutique</strong> permettant au joueur d'acheter
+                    des bonus avec des points gagnés en jeu.
+                </p>
 
-        <h4>Résumé du projet</h4>
-<p>
-Le projet consistait à déployer une infrastructure complète basée sur le protocole Matrix, 
-incluant un serveur Synapse, une base de données PostgreSQL et une interface web Element. 
-L’objectif était de mettre en production une solution de communication sécurisée et fonctionnelle, 
-en utilisant uniquement des compétences en administration système et réseau. 
-Nous avons travaillé sur des machines virtuelles Linux accessibles à distance via SSH, 
-sans interface graphique, ce qui nous a permis de maîtriser l’environnement en ligne de commande. 
-Le projet s’est déroulé en plusieurs étapes : configuration réseau, installation des services, 
-mise en place d’un reverse proxy avec Nginx et sécurisation de l’ensemble. 
-Cette SAÉ nous a permis de comprendre le fonctionnement global d’une infrastructure web 
-et les enjeux liés à la mise en production d’un service et les recherches pour la docs.
-J'ai surtout travaillé sur la mise en place du serveur Synapse 
-</p>
+                <h4>Résultats obtenus</h4>
+                <ul>
+                    <li>Jeu complet avec deux modes fonctionnels et interface JavaFX soignée</li>
+                    <li>Algorithme de génération garantissant l'accessibilité de toutes les cases</li>
+                    <li>Boutique opérationnelle avec plusieurs bonus (révéler le chemin, téléportation…)</li>
+                    <li>Thème visuel Bob l'Éponge ajouté pour enrichir l'expérience utilisateur</li>
+                </ul>
 
-    <h4>Compétences techniques développées</h4>
-    <ul>
-        <li>Administration système Linux (services, logs, utilisateurs)</li>
-        <li>Déploiement et configuration de services (Synapse, PostgreSQL, Nginx)</li>
-        <li>Gestion de machines virtuelles et accès distant via SSH</li>
-        <li>Configuration réseau (IP statiques, DNS, segmentation)</li>
-        <li>Utilisation de systemctl et journalctl pour gérer et diagnostiquer les services</li>
-        <li>Mise en place d’un reverse proxy et sécurisation des communications</li>
-    </ul>
+                <h4>Compétences techniques développées</h4>
+                <ul>
+                    <li>Programmation Java orientée objet et JavaFX</li>
+                    <li>Conception et implémentation d'algorithmes (DFS, BFS pour parcours et génération)</li>
+                    <li>Structuration de données (grilles, cellules, graphes)</li>
+                    <li>Lecture/écriture de fichiers CSV pour le suivi des scores</li>
+                    <li>Tests unitaires et validation fonctionnelle</li>
+                </ul>
 
-    <h4>Savoir-être et compétences transversales</h4>
-    <ul>
-        <li>Travail en équipe et coordination sur un projet technique</li>
-        <li>Organisation et suivi des différentes étapes du déploiement</li>
-        <li>Rédaction de documentation technique claire et structurée</li>
-        <li>Autonomie dans l’apprentissage de nouveaux outils</li>
-        <li>Résolution de problèmes et gestion des erreurs système</li>
-    </ul>
+                <h4>Compétences transversales (soft skills)</h4>
+                <ul>
+                    <li><strong>Organisation :</strong> La répartition claire des modules (génération, interface, boutique, documentation) nous a permis de travailler en parallèle sans blocages. Un point quotidien en début de séance synchronisait l'avancement.</li>
+                    <li><strong>Communication :</strong> La rédaction de la documentation m'a amené à décrire précisément les choix techniques pour que l'équipe puisse reprendre chaque module sans ambiguïté.</li>
+                    <li><strong>Résolution de problèmes :</strong> L'algorithme de génération du Mode Libre produisait initialement des labyrinthes avec des zones inaccessibles. J'ai corrigé cela en intégrant une vérification BFS après génération.</li>
+                </ul>
 
-    <h4>Outils et méthodes</h4>
-    <ul>
-        <li>Linux (Debian / Ubuntu)</li>
-        <li>SSH pour l’administration à distance</li>
-        <li>Synapse (serveur Matrix) et Element Web</li>
-        <li>PostgreSQL pour la base de données</li>
-        <li>Nginx comme reverse proxy</li>
-        <li>Machines virtuelles (VirtualBox / environnement IUT)</li>
-        <li>Markdown, GitLab pour le suivi et la documentation</li>
-    </ul>
-    </div>
-</div>
+                <a href="https://github.com/EmileCamard/SAE-labyrinthe/tree/main" target="_blank">
+                    <strong>Code source disponible sur GitHub</strong>
+                </a>
+            </div>
+        </div>
 
+        <!-- SAÉ 3.03 — Déploiement Matrix -->
+        <div class="project-item" onclick="toggleProject(this)">
+            <div class="project-summary">
+                <h3>SAÉ 3.03 — Déploiement d'application (Matrix)</h3>
+                <p>Mise en place d'une infrastructure complète de communication basée sur le protocole Matrix.</p>
+            </div>
 
-    <!-- ---------------------- SEMESTRE 2 ---------------------- -->
-<h3 class="semester-title" id="sem2">Semestre 2</h3>
+            <div class="project-details">
+                <img src="IMG/Element-logo.png" alt="Logo Element — interface Matrix">
 
-<!-- SAE 2.01 / 2.02 -->
-<div class="project-item" onclick="toggleProject(this)">
-    <div class="project-summary">
-        <h3>SAÉ 2.01 / 2.02 — Séjours linguistiques</h3>
-        <p>Outil d’aide à la décision pour l’organisation de séjours linguistiques.</p>
-    </div>
+                <h4>Contexte du projet</h4>
+                <p>
+                    Projet réalisé en <strong>groupe de 3 étudiants</strong> dans le cadre du
+                    Semestre 3. Il consistait à déployer une infrastructure complète basée sur le
+                    protocole Matrix, incluant un serveur Synapse, une base de données PostgreSQL
+                    et une interface web Element, entièrement en ligne de commande sur des
+                    machines virtuelles Linux.
+                </p>
 
-    <div class="project-details">
-                <img src="IMG/SejourLing.png" alt="Illustration du projet">
-        <h4>Résumé du projet</h4>
-        <p>
-            Le projet consiste à développer un outil informatique permettant d’optimiser
-            l’organisation de séjours linguistiques entre plusieurs pays européens 
-            (France, Italie, Espagne, Allemagne). L’objectif est de trouver le meilleur 
-            appariement entre adolescents hôtes et visiteurs en tenant compte de 
-            contraintes rédhibitoires (allergies, incompatibilités) et de préférences 
-            personnelles (hobbies, genre, âge). 
-            L’application repose sur des algorithmes d’optimisation modélisés en graphe,
-            une interface graphique en JavaFX, et une architecture orientée objet en Java.
-            Le projet mobilise des notions de modélisation UML, traitement de fichiers CSV, 
-            structures de données et gestion rigoureuse de projet via Git.
-            J'ai surtout fait de la documentation et l'aspect graphique.
+                <h4>Mon rôle</h4>
+                <p>
+                    J'ai été principalement responsable de l'<strong>installation et de la
+                    configuration du serveur Synapse</strong> : génération du fichier de
+                    configuration, liaison avec la base PostgreSQL, paramétrage des ports et
+                    vérification des logs de démarrage via <code>journalctl</code>. J'ai également
+                    contribué à la mise en place du reverse proxy Nginx.
+                </p>
 
-        </p>
-        
+                <h4>Résultats obtenus</h4>
+                <ul>
+                    <li>Infrastructure Matrix entièrement fonctionnelle (Synapse + PostgreSQL + Element)</li>
+                    <li>Accès à distance sécurisé via SSH et reverse proxy Nginx opérationnel</li>
+                    <li>Communication chiffrée entre plusieurs comptes Matrix de test</li>
+                    <li>Documentation technique rédigée en Markdown pour reproduire l'installation</li>
+                </ul>
 
-        <h4>Compétences développées</h4>
-        <ul>
-            <li>Développement d’applications Java avec tests unitaires.</li>
-            <li>Implémentation d’algorithmes d’appariement sur graphes pondérés.</li>
-            <li>Traitement et analyse de données via fichiers CSV.</li>
-            <li>Développement d’une IHM interactive en JavaFX.</li>
-            <li>Modélisation UML et conception orientée objet.</li>
-        </ul>
+                <h4>Compétences techniques développées</h4>
+                <ul>
+                    <li>Administration système Linux (services, logs, utilisateurs, permissions)</li>
+                    <li>Déploiement et configuration de services (Synapse, PostgreSQL, Nginx)</li>
+                    <li>Gestion de machines virtuelles et accès distant via SSH</li>
+                    <li>Configuration réseau (IP statiques, DNS, segmentation)</li>
+                    <li>Utilisation de <code>systemctl</code> et <code>journalctl</code></li>
+                    <li>Mise en place d'un reverse proxy et sécurisation des communications</li>
+                </ul>
 
-        <h4>Savoir-être requis</h4>
-        <ul>
-            <li>Capacité à travailler en groupe sur plusieurs semaines.</li>
-            <li>Communication efficace et gestion des imprévus.</li>
-            <li>Organisation, rigueur et respect des délais.</li>
-        </ul>
+                <h4>Compétences transversales (soft skills)</h4>
+                <ul>
+                    <li><strong>Autonomie :</strong> L'absence d'interface graphique nous a obligés à tout réaliser en ligne de commande. J'ai dû rechercher la documentation officielle de Synapse pour résoudre des erreurs de configuration inédites.</li>
+                    <li><strong>Rigueur :</strong> Un fichier de configuration Synapse mal indenté suffit à empêcher le démarrage du service. Cette expérience m'a appris à valider systématiquement la syntaxe avant de redémarrer un service.</li>
+                    <li><strong>Communication technique :</strong> La rédaction d'une documentation claire était essentielle pour que l'équipe puisse reproduire les étapes sans recommencer depuis zéro.</li>
+                </ul>
+            </div>
+        </div>
 
-        <h4>Savoir-faire non informatiques</h4>
-        <ul>
-            <li>Organisation du travail en équipe, répartition des rôles et suivi d’avancement.</li>
-            <li>Rédaction hebdomadaire d’un rapport pour suivre l’évolution du projet.</li>
-            <li>Application de principes d’ergonomie et prise en compte des retours utilisateurs.</li>
-        </ul>
+        <!-- ======================== SEMESTRE 2 ======================== -->
+        <h3 class="semester-title" id="sem2">Semestre 2</h3>
+
+        <!-- SAÉ 2.01/2.02 — Séjours linguistiques -->
+        <div class="project-item" onclick="toggleProject(this)">
+            <div class="project-summary">
+                <h3>SAÉ 2.01 / 2.02 — Séjours linguistiques</h3>
+                <p>Outil d'aide à la décision pour l'organisation de séjours linguistiques.</p>
+            </div>
+
+            <div class="project-details">
+                <img src="IMG/SejourLing.png" alt="Interface du projet Séjours Linguistiques">
+
+                <h4>Contexte du projet</h4>
+                <p>
+                    Projet réalisé en <strong>groupe de 5 étudiants</strong> sur l'ensemble
+                    du Semestre 2. Il consistait à développer un outil Java permettant
+                    d'optimiser l'appariement entre adolescents hôtes et visiteurs dans le
+                    cadre de séjours linguistiques entre pays européens (France, Italie,
+                    Espagne, Allemagne).
+                </p>
+
+                <h4>Mon rôle</h4>
+                <p>
+                    Je me suis principalement occupé de la <strong>documentation</strong>
+                    (rédaction des rapports hebdomadaires, des guides d'utilisation et des
+                    spécifications) et de la <strong>partie graphique</strong> de l'interface
+                    JavaFX (conception des écrans, mise en forme des résultats d'appariement,
+                    intégration des maquettes Figma).
+                </p>
+
+                <h4>Résultats obtenus</h4>
+                <ul>
+                    <li>Application Java fonctionnelle avec interface JavaFX complète</li>
+                    <li>Algorithme d'appariement sur graphe pondéré opérationnel</li>
+                    <li>Gestion des contraintes rédhibitoires (allergies, incompatibilités) et des préférences</li>
+                    <li>Rapport hebdomadaire d'avancement rédigé et livré chaque semaine</li>
+                </ul>
+
+                <h4>Compétences techniques développées</h4>
+                <ul>
+                    <li>Développement d'applications Java avec tests unitaires</li>
+                    <li>Implémentation d'algorithmes d'appariement sur graphes pondérés</li>
+                    <li>Traitement et analyse de données via fichiers CSV</li>
+                    <li>Développement d'une IHM interactive en JavaFX</li>
+                    <li>Modélisation UML et conception orientée objet</li>
+                </ul>
+
+                <h4>Compétences transversales (soft skills)</h4>
+                <ul>
+                    <li><strong>Organisation sur la durée :</strong> Le projet s'étalant sur plusieurs semaines, j'ai appris à gérer un backlog de tâches avec des livraisons régulières et à anticiper les dépendances entre modules.</li>
+                    <li><strong>Communication :</strong> La rédaction hebdomadaire des rapports m'a appris à synthétiser l'avancement du groupe de façon claire pour un lecteur extérieur.</li>
+                    <li><strong>Ergonomie :</strong> En travaillant sur l'interface JavaFX, j'ai intégré des retours utilisateurs pour améliorer la lisibilité des résultats d'appariement.</li>
+                </ul>
 
                 <a href="https://github.com/EmileCamard/SAE-Apparaiment" target="_blank">
-            <strong>Code source disponible sur GitHub</strong>
-        </a>
+                    <strong>Code source disponible sur GitHub</strong>
+                </a>
+            </div>
+        </div>
 
-    </div>
-</div>
+        <!-- SAÉ 2.03 — VM Debian -->
+        <div class="project-item" onclick="toggleProject(this)">
+            <div class="project-summary">
+                <h3>SAÉ 2.03 — VM Debian automatisée</h3>
+                <p>Automatisation complète de l'installation d'une machine virtuelle Debian.</p>
+            </div>
 
-    <!-- SAE 2.03 -->
-<div class="project-item" onclick="toggleProject(this)">
-    <div class="project-summary">
-        <h3>SAÉ 2.03 — VM Debian automatisée</h3>
-        <p>Automatisation complète de l'installation d'une machine virtuelle Debian.</p>
-    </div>
+            <div class="project-details">
+                <img src="IMG/Gitea.png" alt="Illustration du projet VM Debian">
 
-    <div class="project-details">
-        <img src="IMG/Gitea.png" alt="Illustration du projet">
+                <h4>Contexte du projet</h4>
+                <p>
+                    Projet réalisé en <strong>groupe de 3 étudiants</strong> dans le cadre
+                    du Semestre 2. Il consistait à installer manuellement une VM Debian dans
+                    VirtualBox, puis à automatiser l'ensemble du processus via des scripts Shell,
+                    et enfin à documenter chaque étape dans un rapport Markdown.
+                </p>
 
-        <h4>Résumé du projet</h4>
+                <h4>Résultats obtenus</h4>
+                <ul>
+                    <li>VM Debian entièrement fonctionnelle avec environnement graphique configuré</li>
+                    <li>Scripts d'automatisation couvrant l'installation et la post-configuration</li>
+                    <li>Rapport Markdown complet permettant de reproduire l'installation de façon fiable</li>
+                </ul>
+
+                <h4>Compétences techniques développées</h4>
+                <ul>
+                    <li>Virtualisation et gestion de machines virtuelles (VirtualBox)</li>
+                    <li>Installation et automatisation d'un système Linux (Debian)</li>
+                    <li>Maîtrise du terminal et des commandes Linux</li>
+                    <li>Scripting Shell pour l'automatisation des tâches</li>
+                    <li>Rédaction d'un rapport technique en Markdown</li>
+                </ul>
+
+                <h4>Compétences transversales (soft skills)</h4>
+                <ul>
+                    <li><strong>Autonomie :</strong> Face aux erreurs de configuration des scripts de post-installation, j'ai dû analyser les logs d'erreur et consulter la documentation Debian de façon autonome pour identifier les causes.</li>
+                    <li><strong>Rigueur dans la documentation :</strong> Chaque étape devait être documentée en temps réel pour être reproductible. Oublier une commande rendait le rapport inutilisable, ce qui m'a appris à documenter au fur et à mesure.</li>
+                    <li><strong>Gestion de l'imprévu :</strong> La répartition des tâches n'ayant pas été bien définie au départ, l'équipe a dû se réorganiser en cours de projet, ce qui nous a appris l'importance d'une attribution claire des rôles dès le lancement.</li>
+                </ul>
+
+                <a href="https://github.com/echnsama/SAE-2.03" target="_blank">
+                    <strong>Code source disponible sur GitHub</strong>
+                </a>
+            </div>
+        </div>
+
+        <!-- SAÉ 2.04 — Jeux Olympiques -->
+        <div class="project-item" onclick="toggleProject(this)">
+            <div class="project-summary">
+                <h3>SAÉ 2.04 — Jeux Olympiques</h3>
+                <p>Analyse, modélisation et visualisation de données des Jeux Olympiques.</p>
+            </div>
+
+            <div class="project-details">
+                <img src="IMG/RapportJO.png" alt="Rapport Jeux Olympiques">
+
+                <h4>Contexte du projet</h4>
+                <p>
+                    Projet réalisé en <strong>binôme</strong> dans le cadre du Semestre 2.
+                    Il consistait à analyser un ensemble de données réelles sur les Jeux Olympiques :
+                    normalisation d'une base de données, écriture de requêtes SQL complexes,
+                    analyses statistiques et visualisations.
+                </p>
+
+                <h4>Mon rôle</h4>
+                <p>
+                    J'ai principalement réalisé les <strong>requêtes SQL</strong> (jointures,
+                    agrégats, sous-requêtes) et l'analyse des résultats. En raison d'une fuite
+                    du corrigé de la partie statistique, le projet n'a pas pu être mené à terme
+                    dans sa totalité.
+                </p>
+
+                <h4>Compétences techniques développées</h4>
+                <ul>
+                    <li>Rédaction et exécution de requêtes SQL complexes sur une base relationnelle</li>
+                    <li>Modélisation et normalisation de données</li>
+                    <li>Analyses statistiques descriptives</li>
+                    <li>Création et interprétation de graphiques</li>
+                    <li>Production d'un rapport structuré et critique</li>
+                </ul>
+
+                <h4>Compétences transversales (soft skills)</h4>
+                <ul>
+                    <li><strong>Rigueur :</strong> La normalisation de la base de données exigeait une analyse précise des dépendances fonctionnelles pour éviter les redondances.</li>
+                    <li><strong>Adaptabilité :</strong> Face à l'arrêt prématuré de la partie statistique (fuite du corrigé), nous avons concentré nos efforts sur les requêtes SQL et la qualité du rapport pour valoriser le travail accompli.</li>
+                </ul>
+
+                <a href="https://docs.google.com/document/d/1b2sm4jS_MQvHbYmF581rjOzjOJ3gAqdyfFfvcjz4gYE/edit?usp=sharing" target="_blank">
+                    <strong>Lien vers le rapport complet</strong>
+                </a>
+            </div>
+        </div>
+
+        <!-- SAÉ 2.05 — JobyFind -->
+        <div class="project-item" onclick="toggleProject(this)">
+            <div class="project-summary">
+                <h3>SAÉ 2.05 — JobyFind</h3>
+                <p>Application web et mobile de mise en relation entre candidats et recruteurs.</p>
+            </div>
+
+            <div class="project-details">
+                <img src="IMG/jobyfind.png" alt="Aperçu du projet JobyFind">
+
+                <h4>Contexte du projet</h4>
+                <p>
+                    Projet de gestion réalisé en <strong>groupe de 4 étudiants</strong> dans le
+                    cadre du Semestre 2. Il consistait à concevoir une application mobile de mise
+                    en relation entre candidats et recruteurs, inspirée du principe de matching
+                    (système de swipe), et à produire un dossier de présentation professionnel
+                    complet (étude de marché, stratégie commerciale, pitch deck).
+                </p>
+
+                <h4>Mon rôle</h4>
+                <p>
+                    Je me suis principalement chargé de la <strong>conception initiale de l'idée</strong>
+                    et de l'ensemble de la <strong>présentation de l'application</strong> : pitch deck,
+                    plaquette de communication, description des fonctionnalités et maquettes visuelles.
+                </p>
+
+                <h4>Résultats obtenus</h4>
+                <ul>
+                    <li>Dossier complet incluant étude PESTEL, analyse concurrentielle et business model</li>
+                    <li>Pitch deck professionnel présenté devant un jury</li>
+                    <li>Stratégie de financement et de distribution élaborée</li>
+                </ul>
+
+                <h4>Compétences transversales (soft skills)</h4>
+                <ul>
+                    <li><strong>Créativité et esprit d'initiative :</strong> J'ai proposé le concept de l'application en m'inspirant des codes des apps de rencontre pour les adapter au monde du recrutement, puis convaincu l'équipe de cette approche.</li>
+                    <li><strong>Communication :</strong> La préparation du pitch deck m'a appris à synthétiser des idées complexes en supports visuels clairs et percutants pour un public non technique.</li>
+                    <li><strong>Organisation :</strong> Nous avons utilisé un diagramme de Gantt pour répartir les phases du projet (idéation, rédaction, présentation) et respecter les délais.</li>
+                </ul>
+
+                <a href="https://docs.google.com/document/d/15vBQdZtTftAYkhVj6LIxoE-XNwsJ_HQuNa502mdv0ac/edit?usp=sharing" target="_blank">
+                    <strong>Lien vers le projet</strong>
+                </a>
+            </div>
+        </div>
+
+        <!-- SAÉ 2.06 — Vidéo vulgarisation -->
+        <div class="project-item" onclick="toggleProject(this)">
+            <div class="project-summary">
+                <h3>SAÉ 2.06 — Vidéo de vulgarisation scientifique</h3>
+                <p>Production d'une vidéo pédagogique complète sur la génération procédurale.</p>
+            </div>
+
+            <div class="project-details">
+
+                <h4>Contexte du projet</h4>
+                <p>
+                    Projet réalisé en <strong>groupe de 3 étudiants</strong> dans le cadre du
+                    Semestre 2. Il consistait à concevoir et produire une vidéo pédagogique
+                    expliquant la <em>génération procédurale dans les jeux vidéo</em> à un
+                    public non expert, en garantissant la rigueur scientifique du contenu.
+                </p>
+
+                <h4>Mon rôle</h4>
+                <p>
+                    J'ai pris en charge le <strong>storyboard</strong>, la
+                    <strong>rédaction du scénario</strong> et la totalité du
+                    <strong>montage vidéo</strong> final (synchronisation voix-off / images,
+                    transitions, habillage).
+                </p>
+
+                <h4>Résultats obtenus</h4>
+                <ul>
+                    <li>Vidéo de vulgarisation publiée sur YouTube, d'une durée de plusieurs minutes</li>
+                    <li>Explication claire du bruit de Perlin et de la marche aléatoire illustrée par des exemples de jeux vidéo connus</li>
+                    <li>Voix-off enregistrée et synchronisée avec les visuels</li>
+                </ul>
+
+                <h4>Compétences techniques développées</h4>
+                <ul>
+                    <li>Recherche, compréhension et vulgarisation d'un concept algorithmique complexe</li>
+                    <li>Écriture d'un scénario pédagogique adapté au format vidéo</li>
+                    <li>Montage vidéo, enregistrement et traitement de voix-off</li>
+                    <li>Compréhension des algorithmes de génération procédurale (bruit de Perlin)</li>
+                </ul>
+
+                <h4>Compétences transversales (soft skills)</h4>
+                <ul>
+                    <li><strong>Adaptabilité :</strong> Trouver des images et vidéos libres de droits adaptées au propos s'est révélé difficile. J'ai dû ajuster le scénario pour coller aux visuels disponibles sans trahir le contenu technique.</li>
+                    <li><strong>Gestion du temps :</strong> Le montage a pris bien plus de temps que prévu. Cette expérience m'a appris à toujours surestimer le temps alloué à la production finale.</li>
+                    <li><strong>Communication écrite et orale :</strong> L'écriture du scénario exigeait un équilibre délicat entre exactitude technique et accessibilité pour un public novice.</li>
+                </ul>
+
+                <h4>Livrable</h4>
+                <p>
+                    <a href="https://youtu.be/e6r2IHpKgMY" target="_blank">
+                        Vidéo de vulgarisation — Génération procédurale
+                    </a>
+                </p>
+            </div>
+        </div>
+
+        <!-- ======================== SEMESTRE 1 ======================== -->
+        <h3 class="semester-title" id="sem1">Semestre 1</h3>
+
+        <!-- SAÉ 1.02 — Jeu ludo-pédagogique -->
+        <div class="project-item" onclick="toggleProject(this)">
+            <div class="project-summary">
+                <h3>SAÉ 1.02 — Jeu ludo-pédagogique "Questions pour un Chevalier"</h3>
+                <p>Développement d'un jeu de quiz en Python avec trois modes de jeu.</p>
+            </div>
+
+            <div class="project-details">
+
+                <h4>Contexte du projet</h4>
+                <p>
+                    Premier projet de développement réalisé en <strong>binôme</strong> dans
+                    le cadre du Semestre 1. Il consistait à concevoir et développer un jeu
+                    ludo-pédagogique en Python, en mettant en pratique les notions vues en cours
+                    (fonctions, modularité, gestion de fichiers, persistance des données).
+                </p>
+
+                <h4>Description du jeu</h4>
+                <p>
+                    "Questions pour un Chevalier" plonge le joueur dans un univers médiéval : il
+                    incarne un chevalier devant traverser la Forêt de la Mort en répondant à des
+                    questions sur des époques historiques. Le jeu propose trois modes :
+                    <em>Mode Histoire</em> (aventure narrative), <em>Mode 2 Joueurs</em>
+                    (affrontement) et <em>Mode Infini</em> (défi avec sauvegarde des scores).
+                </p>
+
+                <h4>Mon rôle</h4>
+                <p>
+                    Développement en binôme avec Sebastian Novak. J'ai contribué à la
+                    <strong>conception de l'univers narratif</strong> du jeu, au développement
+                    de plusieurs modules (gestion des questions, logique du mode Histoire) et aux
+                    <strong>tests</strong> des différentes fonctions.
+                </p>
+
+                <h4>Résultats obtenus</h4>
+                <ul>
+                    <li>Jeu fonctionnel avec les trois modes implémentés</li>
+                    <li>Système de sauvegarde permettant de reprendre une partie</li>
+                    <li>Questions et assets (ASCII art) externalisés dans des fichiers séparés</li>
+                    <li>Contrôle des saisies utilisateur sans plantage</li>
+                </ul>
+
+                <h4>Compétences techniques développées</h4>
+                <ul>
+                    <li>Programmation modulaire en Python (fonctions, types, imports)</li>
+                    <li>Externalisation des données dans des fichiers (questions, ASCII art)</li>
+                    <li>Persistance des données (sauvegarde et reprise de partie)</li>
+                    <li>Contrôle et validation des saisies utilisateur</li>
+                    <li>Rédaction de tests pour valider les fonctions principales</li>
+                </ul>
+
+                <h4>Compétences transversales (soft skills)</h4>
+                <ul>
+                    <li><strong>Travail en binôme :</strong> Première expérience de développement collaboratif. Nous avons appris à nous répartir les modules de façon à travailler en parallèle, même si la coordination au début manquait de structure.</li>
+                    <li><strong>Adaptabilité :</strong> Face à des cas limites de saisie utilisateur non prévus lors de la conception, nous avons dû ajouter des validations supplémentaires en cours de développement.</li>
+                    <li><strong>Créativité :</strong> L'univers médiéval et la narration du Mode Histoire étaient entièrement originaux, ce qui nous a permis de proposer quelque chose de différent des autres groupes.</li>
+                </ul>
+
+                <h4>Ce que ce projet m'a apporté</h4>
+                <p>
+                    Ce premier projet de développement m'a donné les bases du raisonnement modulaire
+                    et de la gestion de données dans un programme. C'est ici que j'ai compris
+                    l'importance de structurer son code avant de le coder, une leçon que j'ai
+                    réinvestie dans tous les projets suivants.
+                </p>
+            </div>
+        </div>
+
+        <!-- SAÉ 1.05/1.06 — Site web -->
+        <div class="project-item" onclick="toggleProject(this)">
+            <div class="project-summary">
+                <h3>SAÉ 1.05 / 1.06 — Site web de location de véhicules</h3>
+                <p>Création d'un site web multi-pages avec maquette et newsletter professionnelle.</p>
+            </div>
+
+            <div class="project-details">
+
+                <h4>Contexte du projet</h4>
+                <p>
+                    Projet réalisé en <strong>groupe</strong> dans le cadre du Semestre 1.
+                    Il consistait à créer un site web présentant une offre de location de véhicules,
+                    en partant d'une maquette réalisée préalablement. Le projet incluait également
+                    la rédaction et l'envoi d'une newsletter professionnelle pour présenter le site.
+                </p>
+
+                <h4>Mon rôle</h4>
+                <p>
+                    J'ai travaillé sur le <strong>développement HTML/CSS</strong> du site
+                    (structuration des pages, gestion des liens entre pages, intégration des
+                    formulaires) et sur la <strong>conception de la maquette</strong> initiale.
+                    J'ai également participé à la rédaction de la newsletter.
+                </p>
+
+                <h4>Résultats obtenus</h4>
+                <ul>
+                    <li>Site web multi-pages fonctionnel avec page d'accueil et page de présentation des véhicules</li>
+                    <li>Formulaire de contact intégré avec validation des saisies</li>
+                    <li>Newsletter rédigée selon les codes professionnels de la communication par e-mail</li>
+                </ul>
+
+                <h4>Compétences techniques développées</h4>
+                <ul>
+                    <li>Développement HTML / CSS (mise en page, responsivité de base)</li>
+                    <li>Gestion des liens entre plusieurs pages d'un site</li>
+                    <li>Intégration de formulaires interactifs</li>
+                    <li>Réalisation d'une maquette avant développement</li>
+                </ul>
+
+                <h4>Compétences transversales (soft skills)</h4>
+                <ul>
+                    <li><strong>Organisation :</strong> Pour la première fois, j'ai utilisé un diagramme de Gantt pour planifier les phases du projet (maquette → développement → newsletter → présentation).</li>
+                    <li><strong>Communication :</strong> La rédaction de la newsletter m'a appris à vulgariser un contenu technique pour un public non averti et à soigner la forme d'une communication professionnelle.</li>
+                    <li><strong>Autonomie :</strong> La gestion des liens entre les pages et les formulaires m'a demandé des recherches documentaires autonomes, ce qui a renforcé mon habitude de consulter les références officielles (MDN).</li>
+                </ul>
+
+                <h4>Ce que ce projet m'a apporté</h4>
+                <p>
+                    Ce projet a été mon premier contact concret avec le développement web. Il m'a donné
+                    envie d'approfondir le CSS et les interactions côté client, et a directement
+                    influencé mon choix de me spécialiser en développement full-stack.
+                </p>
+            </div>
+        </div>
+
+        <!-- SAÉ 1.03 — VM Debian S1 -->
+        <div class="project-item" onclick="toggleProject(this)">
+            <div class="project-summary">
+                <h3>SAÉ 1.03 — Installation d'une machine virtuelle Debian</h3>
+                <p>Première approche de l'administration système Linux via VirtualBox.</p>
+            </div>
+
+            <div class="project-details">
+
+                <h4>Contexte du projet</h4>
+                <p>
+                    Projet individuel réalisé dans le cadre du Semestre 1. Il consistait à
+                    installer et configurer un système Debian sur une machine virtuelle VirtualBox,
+                    en comprenant chaque étape : partitionnement, gestion des utilisateurs,
+                    installation de logiciels et configuration réseau.
+                </p>
+
+                <h4>Résultats obtenus</h4>
+                <ul>
+                    <li>Machine virtuelle Debian fonctionnelle avec environnement configuré</li>
+                    <li>Gestion des partitions, des groupes et des permissions réalisée</li>
+                    <li>Gestionnaire de paquets APT maîtrisé pour l'installation de logiciels</li>
+                    <li>Documentation des étapes rédigée pour permettre la reproductibilité</li>
+                </ul>
+
+                <h4>Compétences techniques développées</h4>
+                <ul>
+                    <li>Virtualisation et gestion de machines virtuelles (VirtualBox)</li>
+                    <li>Installation et configuration d'un système Linux (Debian)</li>
+                    <li>Gestion des utilisateurs et des groupes sous Unix/Linux</li>
+                    <li>Utilisation avancée du gestionnaire de paquets APT</li>
+                    <li>Configuration réseau de base (partitionnement, GRUB)</li>
+                </ul>
+
+                <h4>Compétences transversales (soft skills)</h4>
+                <ul>
+                    <li><strong>Autonomie et recherche documentaire :</strong> La configuration réseau et le choix des miroirs APT m'ont demandé des recherches approfondies sur la documentation Debian officielle, me forgeant l'habitude de consulter les sources primaires.</li>
+                    <li><strong>Rigueur :</strong> Une commande mal exécutée pouvait rendre la VM inutilisable. J'ai appris à noter chaque étape et à vérifier le résultat avant de passer à la suivante.</li>
+                </ul>
+
+                <h4>Ce que ce projet m'a apporté</h4>
+                <p>
+                    Ce projet a constitué ma première immersion dans l'administration système Linux.
+                    Il a directement préparé la SAÉ 2.03 (automatisation de l'installation) et la
+                    SAÉ 3.03 (déploiement d'une infrastructure Matrix), montrant une progression
+                    claire de mes compétences système au fil des semestres.
+                </p>
+            </div>
+        </div>
+
+    </section>
+
+    <br><br>
+
+    <section id="AnalyseReflexive">
+        <br>
+        <h2>Analyse réflexive</h2>
+
         <p>
-            Le projet consistait à configurer une machine virtuelle Debian en comprenant
-            chaque étape, depuis l’installation manuelle jusqu’à l’automatisation complète.
-            Après la création d’une VM dans VirtualBox, l’équipe a procédé à l’installation du système,
-            à la configuration des logiciels essentiels et de l’environnement graphique. 
-            Une fois les manipulations réalisées manuellement, celles-ci ont été automatisées via des
-            scripts shell. Un rapport en Markdown documente chaque étape, les choix techniques,
-            les problèmes rencontrés et les solutions mises en place, afin de permettre de reproduire
-            l’installation de manière fiable.
-
-
+            Cette section propose une prise de recul sur l'ensemble des projets réalisés
+            au cours de mon BUT Informatique. Elle met en évidence les apprentissages
+            transversaux, les difficultés récurrentes et l'évolution de mes compétences
+            entre le Semestre 1 et le Semestre 4.
         </p>
 
-        <h4>Compétences développées</h4>
-        <ul>
-            <li>Virtualisation et gestion de machines virtuelles (VirtualBox).</li>
-            <li>Installation et automatisation d’un système Linux (Debian).</li>
-            <li>Maîtrise du terminal et des commandes Linux.</li>
-            <li>Rédaction d’un rapport technique en Markdown.</li>
-        </ul>
-        <p>(Contient scripts, rapports et documents nécessaires.)</p>
-
-        <h4>Savoir-être</h4>
-        <ul>
-            <li>Travail d’équipe, coordination et communication.</li>
-            <li>Autonomie dans la résolution de problèmes techniques.</li>
-            <li>Gestion du temps et respect des échéances.</li>
-        </ul>
-
-    <a href="github.com/echnsama/SAE-2.03" target="_blank">
-        <strong>Code source disponible sur GitHub</strong>
-    </a>
-    </div>
-</div>
-
-
-    <!-- SAE 2.04 -->
-<div class="project-item" onclick="toggleProject(this)">
-    <div class="project-summary">
-        <h3>SAÉ 2.04 — Jeux Olympiques</h3>
-        <p>Analyse, modélisation et visualisation de données des Jeux Olympiques.</p>
-    </div>
-
-    <div class="project-details">
-        <img src="IMG/RapportJO.png" alt="Illustration du projet">
-
-        <h4>Résumé du projet</h4>
+        <h3>Ce que ces projets m'ont appris</h3>
         <p>
-            La SAÉ 2.04 consistait à analyser un ensemble de données réelles liées aux Jeux Olympiques.
-            Le projet incluait la normalisation d’une base de données, l’écriture de requêtes SQL, 
-            ainsi que la réalisation d’analyses statistiques et de visualisations. 
-            En raison d’une fuite du corrigé de la partie statistique, le projet n’a pas pu être mené entièrement,
-            limitant la mise en application des compétences prévues.
-            J'ai surtout fait les requetes SQL et les resultats.
+            Dès le Semestre 1, avec la SAÉ 1.02 (jeu en Python) et la SAÉ 1.05 (site web),
+            j'ai acquis les bases de la modularité et de la structuration du code. Ces notions
+            ont évolué progressivement : en S2, j'ai appliqué l'algorithmique sur graphes (SAÉ 2.01),
+            en S3, j'ai travaillé sur du déploiement serveur (SAÉ 3.03), et en S4, j'ai conçu
+            une API REST complète avec authentification (SAÉ S4.A02.1). Cette montée en complexité
+            reflète une progression réelle dans ma façon d'appréhender un projet technique.
+        </p>
+        <p>
+            J'ai également appris que la qualité de la documentation est aussi importante que
+            le code lui-même. Avoir documenté la VM Debian en S1 m'a servi de référence en S2,
+            et la documentation de l'API REST en S4 a facilité les tests automatisés.
         </p>
 
-        <h4>Compétences développées</h4>
-        <ul>
-            <li>Rédaction et exécution de requêtes SQL sur une base relationnelle.</li>
-            <li>Modélisation et normalisation de données.</li>
-            <li>Analyses statistiques descriptives.</li>
-            <li>Création et interprétation de graphiques.</li>
-            <li>Production d’un rapport structuré et critique.</li>
-        </ul>
-
-
-        <h4>Savoir-être</h4>
-        <ul>
-            <li>Travail en binôme et répartition efficace des tâches.</li>
-            <li>Rigueur dans la gestion et la présentation des données.</li>
-        </ul>
-        <a href="https://docs.google.com/document/d/1b2sm4jS_MQvHbYmF581rjOzjOJ3gAqdyfFfvcjz4gYE/edit?usp=sharing" target="_blank">
-            <strong>Lien vers le rapport complet</strong>
-        </a>
-    </div>
-</div>
-
-
-    <!-- SAE 2.05 -->
-<div class="project-item" onclick="toggleProject(this)">
-    <div class="project-summary">
-        <h3>SAÉ 2.05 — JobyFind</h3>
-        <p>Application web et mobile de mise en relation entre candidats et recruteurs.</p>
-    </div>
-
-    <div class="project-details">
-        <img src="IMG/jobyfind.png" alt="Aperçu du projet JobyFind">
-
+        <h3>Difficultés récurrentes et solutions apportées</h3>
         <p>
-            <strong>Présentation du projet :</strong><br>
-Ce projet nous a permis de développer de nombreuses compétences en gestion de projet et en travail d’équipe. Nous avons appris à organiser notre travail en répartissant les rôles et en respectant des délais grâce à des outils comme le diagramme de Gantt. La création de l’application JobyFind nous a aussi permis de stimuler notre créativité et notre esprit d’innovation. Nous avons travaillé sur l’analyse d’un besoin réel, ce qui nous a aidés à mieux comprendre les attentes du marché et des utilisateurs. Ce projet nous a également permis de développer des compétences en communication, notamment pour présenter nos idées de manière claire et convaincante. Nous avons appris à réaliser une étude de marché, à identifier une clientèle cible et à analyser la concurrence. De plus, nous avons abordé des notions commerciales et financières, comme le financement et la stratégie de distribution. Ce travail nous a aussi appris à collaborer efficacement, à écouter les idées des autres et à prendre des décisions en groupe. Enfin, cette SAE nous a permis de mieux comprendre les différentes étapes de création d’un projet, de l’idée initiale jusqu’à sa présentation finale.
-Nous avons bien répartit le travail, que ce soit  je me suis surtout occupé de la partie création de l'idée et toute la présentation de l'application. 
-</p>
-
-
-
-
+            La <strong>gestion du temps</strong> a été ma difficulté la plus constante. En S4,
+            lors de la SAÉ API REST, nous avons sous-estimé la complexité de la gestion des tokens
+            et avons dû tout réorganiser en fin de projet. Pour y remédier, j'ai commencé à identifier
+            systématiquement les tâches à risque en début de projet pour leur allouer plus de temps.
+        </p>
         <p>
-            <strong>Savoir-être développés :</strong><br>
-            • Travail en équipe et communication efficace<br>
-            • Esprit d’initiative et autonomie dans la gestion des tâches
+            La <strong>coordination en équipe</strong> a également été un apprentissage. En SAÉ 2.03,
+            la mauvaise répartition initiale des tâches a créé des déséquilibres. À partir du Semestre 3,
+            j'ai systématiquement proposé une attribution claire des rôles en début de projet,
+            ce qui a amélioré la fluidité du travail collectif.
         </p>
 
+        <h3>Compétences développées ou renforcées</h3>
         <p>
-            <strong>Autres compétences non informatiques :</strong><br>
-            • Analyse de marché (PESTEL, étude concurrentielle)<br>
-            • Création de supports professionnels (pitch deck, plaquette)<br>
-            • Élaboration d’une stratégie financière et commerciale
+            Sur le plan technique, je suis passé du Python basique (S1) à Java orienté objet (S2-S3),
+            puis au développement JavaScript full-stack avec WebSocket (S4) et aux API REST sécurisées.
+            Sur le plan système, j'ai progressé de l'installation manuelle d'une VM (S1) au déploiement
+            d'une infrastructure complète avec reverse proxy et base de données (S3).
         </p>
-                    <a href="https://docs.google.com/document/d/15vBQdZtTftAYkhVj6LIxoE-XNwsJ_HQuNa502mdv0ac/edit?usp=sharing" target="_blank">
-            <strong>Lien vers le projet</strong>
-        </a>    
-    </div>
-</div>
-
-
-    <!-- SAE 2.06 -->
-<div class="project-item" onclick="toggleProject(this)">
-    <div class="project-summary">
-        <h3>SAÉ 2.06 — Vidéo de vulgarisation scientifique</h3>
-        <p>Production d’une vidéo pédagogique complète.</p>
-    </div>
-
-    <div class="project-details">
-
-        <h4>Résumé du projet</h4>
         <p>
-            Le projet consistait à concevoir et réaliser une vidéo pédagogique expliquant 
-            un concept informatique : la génération procédurale dans les jeux vidéo. 
-            L’objectif était de vulgariser un sujet technique auprès d’un public non expert, 
-            tout en garantissant la qualité scientifique et la rigueur du contenu.  
-            Nous avons mobilisé des compétences en recherche documentaire, rédaction de 
-            scénario, narration audiovisuelle et montage vidéo. 
-            Les connaissances mobilisées incluaient les algorithmes de génération 
-            procédurale (bruit de Perlin, marche aléatoire), les principes de game design, 
-            et l’utilisation d’outils collaboratifs comme Google Drive et GitHub. 
-            Une attention particulière a été portée à l’expression orale pour réaliser une 
-            voix-off claire et engageante.
-            J'ai surtout travaillé sur le storyboard, la rédaction du scénario et la partie montage vidéo.
+            Sur le plan transversal, chaque projet m'a renforcé dans la <strong>rédaction technique</strong>
+            (documentation, rapports) et dans la <strong>capacité d'adaptation</strong> face aux
+            imprévus techniques.
         </p>
 
-        <h4>Compétences développées</h4>
-        <ul>
-            <li>Recherche, compréhension et vulgarisation d’un concept informatique complexe.</li>
-            <li>Écriture d’un scénario pédagogique adapté à la vidéo.</li>
-            <li>Montage vidéo, enregistrement et traitement de voix-off.</li>
-            <li>Utilisation d’outils collaboratifs (Google Drive, GitHub).</li>
-            <li>Compréhension des algorithmes de génération procédurale.</li>
-        </ul>
-
-        <h4>Livrable</h4>
+        <h3>Ce que je ferais différemment aujourd'hui</h3>
         <p>
-            Vidéo finale disponible ici :  
-            <a href="https://youtu.be/e6r2IHpKgMY" target="_blank">
-                Vidéo de vulgarisation — Génération procédurale
-            </a>
+            Je consacrerais davantage de temps à la <strong>phase de conception</strong> avant de coder,
+            pour limiter les refactorisations en cours de projet. J'établirais également une attribution
+            explicite des rôles dès le début de chaque projet en équipe et je mettrais en place
+            des tests dès les premières fonctions développées, plutôt qu'en fin de projet.
+            Enfin, je documenterais en temps réel, car j'ai appris à mes dépens qu'attendre la fin
+            du projet pour documenter génère des oublis et des imprécisions.
         </p>
+    </section>
 
-        <h4>Savoir-être requis</h4>
-        <ul>
-            <li>Collaboration efficace et répartition équitable des tâches.</li>
-            <li>Organisation, autonomie et respect des délais.</li>
-        </ul>
+    <br><br>
 
-        <h4>Savoir-faire non informatiques</h4>
-        <ul>
-            <li>Écriture et structuration d’un discours oral (voix-off).</li>
-            <li>Création d’un scénario visuel et choix pertinents d’illustrations.</li>
-            <li>Analyse critique de vidéos existantes pour identifier les bonnes pratiques de vulgarisation.</li>
-        </ul>
+    <section id="contact">
+        <br>
+        <h2>Contact</h2>
+        <br>
+        <div class="contact-info">
+            <h3>Email : emile.camard@gmail.com</h3>
+            <h3>LinkedIn : <a href="https://www.linkedin.com/in/emile-camard-741506384/" target="_blank">linkedin.com/in/emile-camard</a></h3>
+            <h3>GitHub : <a href="https://github.com/EmileCamard" target="_blank">github.com/EmileCamard</a></h3>
+        </div>
 
-    </div>
-</div>
+        <div class="contact-form">
+            <h3>Envoyer un message :</h3>
+            <form
+              action="https://formspree.io/f/xgvglzyo"
+              method="POST"
+            >
+              <label>
+                Votre email :
+                <input type="email" name="email">
+              </label>
+              <label>
+                Votre message :
+                <textarea name="message"></textarea>
+              </label>
+              <button type="submit">Envoyer</button>
+            </form>
+        </div>
 
-</section>
-
-  
         <br><br>
+        <div class="download">
+            <h2>Télécharger mon CV :</h2>
+            <a href="CV-EmileCamard.pdf" download>Télécharger le CV</a>
+        </div>
+    </section>
 
-<section id="AnalyseReflexive">
-    <br>
-    <h2>Analyse réflexive</h2>
-
-    <p>
-        Cette section propose une prise de recul globale sur l’ensemble des projets réalisés
-        au cours de mon BUT Informatique. Elle permet de mettre en évidence les apprentissages
-        transversaux, les difficultés rencontrées, ainsi que l’évolution de mes compétences
-        au fil des expériences.
-    </p>
-
-    <h3>Ce que ces projets m’ont appris</h3>
-    <p>
-        L’ensemble des projets réalisés m’a permis de comprendre concrètement les différentes étapes
-        du cycle de développement logiciel : analyse du besoin, conception, implémentation,
-        tests et documentation. J’ai également appris à mieux structurer mon code, à travailler
-        en équipe sur des projets complexes et à m’adapter à des environnements techniques variés
-        (web, systèmes, jeux vidéo, bases de données).
-    </p>
-
-    <h3>Difficultés rencontrées et solutions apportées</h3>
-    <p>
-        Plusieurs difficultés sont revenues de manière récurrente, notamment la gestion du temps,
-        la coordination en équipe et la résolution de problèmes techniques complexes (synchronisation,
-        algorithmes, déploiement ou architecture logicielle).
-        Pour y remédier, j’ai appris à mieux organiser mon travail en le découpant en tâches,
-        à utiliser des outils de gestion de projet (Git, Trello, issues GitLab), et à communiquer
-        plus efficacement avec mon équipe afin d’anticiper les blocages.
-    </p>
-
-    <h3>Compétences développées ou renforcées</h3>
-    <p>
-        Ces expériences ont renforcé mes compétences en développement logiciel (Java, JavaScript,
-        SQL, APIs REST), en administration système (Linux, déploiement, virtualisation),
-        ainsi qu’en gestion de projet. J’ai également développé des compétences transversales
-        essentielles comme la rigueur, l’autonomie, la capacité d’adaptation et la communication
-        technique.
-    </p>
-
-    <h3>Ce que je ferais différemment aujourd’hui</h3>
-    <p>
-        Avec le recul, je mettrais davantage l’accent sur la phase de conception avant de commencer
-        à coder, afin de limiter les refontes en cours de projet. J’essaierais également de mieux
-        anticiper la répartition des tâches et les délais, notamment dans les projets de groupe.
-        Enfin, je renforcerais la qualité de la documentation et des tests dès le début du développement,
-        afin de gagner en fiabilité et en maintenabilité.
-    </p>
-</section>
-      <br><br>
-        <section id="contact">
-                        <br>
-            <h2>Contact</h2>
-                        <br>
-            <div class="contact-info">
-                <h3>Email : emile.camard@gmail.com</h3>
-                <h3>LinkedIn : <a href="https://www.linkedin.com/in/emile-camard/" target="_blank">linkedin.com/in/emile-camard</a></h3>
-                <h3>GitHub : <a href="https://github.com/EmileCamard" target="_blank">github.com/EmileCamard</a></h3>
-            </div>
-                        <div class="contact-form">
-                <h3>Envoyer un message :</h3>
-<form
-  action="https://formspree.io/f/xgvglzyo"
-  method="POST"
->
-  <label>
-    Votre email:
-    <input type="email" name="email">
-  </label>
-  <label>
-    Votre message:
-    <textarea name="message"></textarea>
-  </label>
-  <!-- your other form fields go here -->
-  <button type="submit">Send</button>
-</form>
-            </div>
-        <br><br>
-            <div class="download">
-                <h2>Télécharger mon CV :</h2>
-                <a href="CV-EmileCamard.pdf" download> Télécharger le CV </a>
-            </div>
-        </section>
-    </main>
+</main>
 </body>
 </html>
